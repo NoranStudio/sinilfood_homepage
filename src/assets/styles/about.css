@@ -1,2 +1,6 @@
 @import "./about/about-header.css";
 @import "./about/about-nav.css";
+
+.App {
+  text-align: start;
+}

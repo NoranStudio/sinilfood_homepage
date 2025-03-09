@@ -51,14 +51,16 @@
   font-weight: 500;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .about-nav {
     width: 100%;
+    min-width: 320px;
     aspect-ratio: 767 / 60;
   }
 
   .about-nav ul {
     width: 90%;
+    min-width: 320 * 0.9px;
     height: 40px;
   }
 

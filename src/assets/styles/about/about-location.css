@@ -66,6 +66,7 @@
   font-size: 28px;
   display: flex;
   align-items: center;
+  box-sizing: content-box;
 }
 
 .about__location__link span {
@@ -81,11 +82,16 @@
   opacity: 0.8;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .about__location__title {
     flex-direction: column;
     height: auto;
     width: 100%;
+  }
+
+  .about__location__title h1 {
+    margin: 20px 0 20px 0;
+    font-size: 28px;
   }
 
   .about__location__tab {
