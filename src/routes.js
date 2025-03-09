@@ -29,9 +29,9 @@ const AppRoutes = () => {
           <Route path="history" element={<History />} />
           <Route path="organization" element={<Organization />} />
         </Route>
-        <Route path="/business/fc-products" element={<FCProducts />} />
-        <Route path="/customer-service/support" element={<CustomerSupport />} />
-        <Route path="/products/oil" element={<OilProducts />} />
+        <Route path="/business" element={<FCProducts />} />
+        <Route path="/customer-service" element={<CustomerSupport />} />
+        <Route path="/products" element={<OilProducts />} />
       </Route>
     </Routes>
   );
