@@ -12,7 +12,8 @@
   align-items: center;
   width: 100%;
   max-width: 1280px;
-  height: 250px;
+  margin-top: 60px;
+  height: 100px;
 }
 
 .about__location__tab {
@@ -87,11 +88,6 @@
     flex-direction: column;
     height: auto;
     width: 100%;
-  }
-
-  .about__location__title h1 {
-    margin: 20px 0 20px 0;
-    font-size: 28px;
   }
 
   .about__location__tab {
