@@ -14,7 +14,7 @@ import "../../assets/styles/about/about-company.css";
 
 const AboutCompany = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width:767px)",
+    query: "(max-width:768px)",
   });
 
   return (
