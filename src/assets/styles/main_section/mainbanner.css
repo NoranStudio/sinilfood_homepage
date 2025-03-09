@@ -1,4 +1,6 @@
 .banner-section {
+  display: flex;
+  flex-direction: column;
   /* max-width: 1920px; */
   width: 100%;
   aspect-ratio: 1 / 0.5;

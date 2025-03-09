@@ -6,15 +6,6 @@
   font-family: "Arial", sans-serif;
 }
 
-.base-layout {
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100vw;
-}
-
 /* 배너 스타일 (기본 크기) */
 .banner {
   background-image: url("../img/banner.png"); /* 배너 이미지 경로 */
@@ -512,11 +503,11 @@
   align-items: center; /* 세로 중앙 정렬 */
   background-color: rgb(255, 255, 255); /* 배경색 */
   max-width: 1920px;
-  //height : 1394PX;
+  height : 1394PX;
   padding: 0px 0px;
   margin: 0 auto;
   border-radius: 0px; /* 모서리를 둥글게 */
-  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
 }
 
 .counsel-content {
@@ -623,5 +614,5 @@
   width: 100%;
   height: auto;
   border-radius: 15px;
-  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

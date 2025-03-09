@@ -9,7 +9,6 @@ import fc_oil_title from "../../assets/img/fc_oil_title.png";
 import store_oil_title from "../../assets/img/store_oil_title.png";
 import oil_arrow from "../../assets/img/arrow.png";
 
-import "../../assets/styles/main_section/global.css";
 import "../../assets/styles/main_section/oil.css";
 
 function OilSection() {

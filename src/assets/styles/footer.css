@@ -4,6 +4,8 @@
   justify-content: center;
   width: 100%;
   color: #fff;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .footer__inner {
@@ -12,10 +14,7 @@
   height: 100%;
   width: 100%;
   max-width: 1280px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .footer__links {
