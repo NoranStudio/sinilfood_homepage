@@ -11,9 +11,9 @@ const Header = () => {
   const { pathname } = useLocation();
   const prefix = pathname.split("/")[1];
   const menus = [
-    { id: 1, name: "회사소개", url: "" },
+    { id: 1, name: "회사소개", url: "about" },
     { id: 2, name: "사업소개", url: "business" },
-    { id: 3, name: "제품소개", url: "about" },
+    { id: 3, name: "제품소개", url: "products" },
     { id: 4, name: "고객서비스", url: "customer-service" },
   ];
 
@@ -25,8 +25,9 @@ const Header = () => {
     // 스크롤 이벤트 핸들러
     const handleScroll = () => {
       // 헤더 높이 가져오기 (기본값 100px로 설정, 실제 헤더 높이에 맞게 조정 필요)
-      const headerHeight = document.querySelector('header')?.offsetHeight || 100;
-      
+      const headerHeight =
+        document.querySelector("header")?.offsetHeight || 100;
+
       // 스크롤 위치가 헤더 높이보다 크면 isScrolled를 true로 설정
       if (window.scrollY > headerHeight) {
         setIsScrolled(true);
@@ -36,16 +37,16 @@ const Header = () => {
     };
 
     // 스크롤 이벤트 리스너 등록
-    window.addEventListener('scroll', handleScroll);
-    
+    window.addEventListener("scroll", handleScroll);
+
     // 컴포넌트 언마운트 시 이벤트 리스너 제거
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header className={isScrolled ? 'scrolled' : ''}>
+    <header className={isScrolled ? "scrolled" : ""}>
       <div className="header-contents">
         <h1>
           <a href="/">
