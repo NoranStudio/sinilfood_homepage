@@ -10,7 +10,6 @@ import truckImage4 from "../../assets/img/center/good_system.png";
 import logo from "../../assets/img/center/logo.png";
 
 import "swiper/css";
-import "../../assets/styles/main_section/global.css";
 import "../../assets/styles/main_section/center.css";
 
 function CenterContents() {

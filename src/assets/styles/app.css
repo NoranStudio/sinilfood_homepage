@@ -1,5 +1,16 @@
-* {
+.app {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1920px;
+}
+
+@media screen and (max-width: 768px) {
+    .app {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+        min-width: 320px;
+    }
 }
