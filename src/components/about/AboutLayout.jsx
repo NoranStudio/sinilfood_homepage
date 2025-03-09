@@ -6,7 +6,7 @@ import "../../assets/styles/about.css";
 const AboutLayout = () => {
   return (
     <div>
-      <AboutHeader />
+      {/* <AboutHeader /> */}
       <AboutNavbar />
       <Outlet />
     </div>
