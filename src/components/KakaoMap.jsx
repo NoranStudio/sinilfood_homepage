@@ -34,10 +34,13 @@ const InfoOverlay = ({ title, address, phone, fax }) => (
         </p>
       </div>
     </div>
-    <div className="info-overlay__link">
+    <a
+      className="info-overlay__link"
+      href="https://map.naver.com/p/search/신일푸드?c=15.00,0,0,0,dh"
+    >
       <p>지도보러가기</p>
       <ArrowRightIcon />
-    </div>
+    </a>
   </div>
 );
 

@@ -27,11 +27,25 @@ const Location = () => {
       </div>
       <KakaoMap position={activate} className="about__location__map" />
       <div className="about__location__links">
-        <a className="about__location__link" href="https://map.kakao.com/">
+        <a
+          className="about__location__link"
+          href={
+            activate === "hwaseong"
+              ? "https://kko.kakao.com/UbfFIQQg8W"
+              : "https://kko.kakao.com/vLrG-zgISx"
+          }
+        >
           카카오 맵<span>KAKAO MAP</span>
           <ArrowRightIcon />
         </a>
-        <a className="about__location__link" href="https://map.naver.com/">
+        <a
+          className="about__location__link"
+          href={
+            activate === "hwaseong"
+              ? "https://naver.me/GmbiyQ2y"
+              : "https://naver.me/xpr5bxEp"
+          }
+        >
           네이버 맵<span>NAVER MAP</span>
           <ArrowRightIcon />
         </a>
