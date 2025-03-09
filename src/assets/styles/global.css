@@ -6,15 +6,6 @@
   font-family: "Arial", sans-serif;
 }
 
-.base-layout {
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100vw;
-}
-
 /* 배너 스타일 (기본 크기) */
 .banner {
   background-image: url("../img/banner.png"); /* 배너 이미지 경로 */
