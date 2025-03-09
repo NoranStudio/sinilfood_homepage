@@ -47,27 +47,29 @@ const InfoOverlay = ({ title, address, phone, fax }) => (
 const KakaoMap = ({ className = "", position }) => {
   useEffect(() => {
     const container = document.getElementById("kakao-map");
-    const options = {
-      center: new window.kakao.maps.LatLng(
-        info[position].center.lat,
-        info[position].center.lng
-      ),
-      level: 3,
-    };
-    const map = new window.kakao.maps.Map(container, options);
-    var marker = new window.kakao.maps.Marker({
-      position: options.center,
-    });
-    marker.setMap(map);
+    if (window?.kakao) {
+      const options = {
+        center: new window.kakao.maps.LatLng(
+          info[position].center.lat,
+          info[position].center.lng
+        ),
+        level: 3,
+      };
+      const map = new window.kakao.maps.Map(container, options);
+      var marker = new window.kakao.maps.Marker({
+        position: options.center,
+      });
+      marker.setMap(map);
 
-    new window.kakao.maps.CustomOverlay({
-      content: renderToString(InfoOverlay(info[position])),
-      map,
-      position: new window.kakao.maps.LatLng(
-        info[position].center.lat,
-        info[position].center.lng
-      ),
-    });
+      new window.kakao.maps.CustomOverlay({
+        content: renderToString(InfoOverlay(info[position])),
+        map,
+        position: new window.kakao.maps.LatLng(
+          info[position].center.lat,
+          info[position].center.lng
+        ),
+      });
+    }
   }, [position]);
 
   return <div id="kakao-map" className={className} />;
