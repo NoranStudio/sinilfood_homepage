@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/img/sinil_logo.png";
 import navWhite from "../../assets/img/nav_white.png";
 import "../../assets/styles/main_section/header.css";
@@ -7,6 +7,7 @@ import navGray from "../../assets/img/nav_gray.png";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { pathname } = useLocation();
   const prefix = pathname.split("/")[1];
   const menus = [
@@ -20,8 +21,31 @@ const Header = () => {
     setIsOpenMenu(!isOpenMenu);
   };
 
+  useEffect(() => {
+    // 스크롤 이벤트 핸들러
+    const handleScroll = () => {
+      // 헤더 높이 가져오기 (기본값 100px로 설정, 실제 헤더 높이에 맞게 조정 필요)
+      const headerHeight = document.querySelector('header')?.offsetHeight || 100;
+      
+      // 스크롤 위치가 헤더 높이보다 크면 isScrolled를 true로 설정
+      if (window.scrollY > headerHeight) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // 스크롤 이벤트 리스너 등록
+    window.addEventListener('scroll', handleScroll);
+    
+    // 컴포넌트 언마운트 시 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={isScrolled ? 'scrolled' : ''}>
       <div className="header-contents">
         <h1>
           <a href="/">
