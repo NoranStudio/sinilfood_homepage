@@ -1,0 +1,73 @@
+/* 전체 컨테이너 */
+.oil-products-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 상단 네비게이션 */
+  .oil-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  .oil-nav li {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  
+  /* 섹션 기본 스타일 */
+  .section {
+    width: 80%;
+    max-width: 1440px;
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  /* 구분선 (얇은 실선) */
+  .section-divider {
+    width: 80%;
+    max-width: 1440px;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0 40px;
+  }
+  
+  /* 이미지 리스트 공통 스타일 */
+  .oil-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* 이미지 간격 조절 */
+  }
+  
+  .oil-item {
+    text-align: center;
+    width: 150px; /* 정렬 편의를 위해 적절히 지정 */
+  }
+  
+  .oil-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .oil-item p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+  }
+  

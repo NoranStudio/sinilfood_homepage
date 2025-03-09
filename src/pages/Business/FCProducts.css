@@ -1,0 +1,101 @@
+.business-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 1440px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.business-banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('../../assets/img/business/business_banner.png');
+    background-repeat: no-repeat;
+    background-size: 1920px 500px;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.business-container {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+}
+
+.business-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.banner-title {
+    width: 494px;
+    height: 130px;
+    text-align: left;
+}
+
+.banner-title p {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+}
+
+.banner-title .light-text {
+    font-weight: 300;
+}
+
+.banner-title .bold-text {
+    font-weight: 700;
+}
+
+.business-banner-mobile {
+    width: 360px;
+    height: 220px;
+    background-color: rgba(184, 184, 184, 0.56);
+    position: relative;
+}
+
+.business-container-mobile {
+    width: 360px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.business-content-mobile {
+    padding: 30px;
+}
+
+.business-content-mobile .banner-title {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.business-content-mobile .light-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.business-content-mobile .bold-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin: 0;
+}

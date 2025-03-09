@@ -1,0 +1,54 @@
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 10;
+}
+.header-contents {
+  width: 1370px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  gap: 57px;
+}
+nav > h2 {
+  margin: 0;
+}
+nav > h2 > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 22px;
+}
+nav > h2 > a.active {
+  font-weight: bold;
+}
+.nav-mo {
+  display: none;
+}
+
+@media screen and (max-width: 1370px) {
+  .header-contents {
+    width: calc(100% - 60px);
+    padding: 30px;
+  }
+  .header-contents h1 {
+    margin: 0;
+  }
+  .header-contents h1 img {
+    width: 100px;
+  }
+  .nav-pc {
+    display: none;
+  }
+  .nav-mo {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+}
