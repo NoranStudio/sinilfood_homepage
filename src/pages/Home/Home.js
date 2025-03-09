@@ -12,12 +12,12 @@ import "../../assets/styles/main_section/home.css";
 function App() {
   return (
     <div className="home">
-      <MainBanner />
-      <Slogan />
-      {/* <CenterContents /> */}
+      {/* <MainBanner /> */}
+      {/* <Slogan /> */}
+      <CenterContents />
       {/* <Slider /> */}
-      <News />
-      <CS />
+      {/* <News /> */}
+      {/* <CS /> */}
     </div>
   );
 }
