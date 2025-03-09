@@ -19,7 +19,7 @@ import OilProducts from "./pages/Products/oilproducts";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/">
+      <Route path="/" element={<BaseLayout />}>
         <Route index element={<Home />} />
         <Route path="/about" element={<AboutLayout />}>
           <Route index element={<AboutCompany />} />
