@@ -38,7 +38,6 @@
   .about-banner {
     height: 200px;
     width: 100%;
-    min-width: 320px;
   }
 
   .about-banner__inner {
