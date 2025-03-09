@@ -71,3 +71,10 @@
   width: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 1023px) {
+  .about__cert__detail svg {
+    width: 150px;
+    right: calc(100% - 75px);
+  }
+}
