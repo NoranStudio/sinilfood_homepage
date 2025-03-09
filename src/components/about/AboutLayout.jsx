@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
-import AboutHeader from "./AboutHeader";
+import AboutBanner from "./AboutBanner";
 import AboutNavbar from "./AboutNavbar";
 import "../../assets/styles/about.css";
 
 const AboutLayout = () => {
   return (
     <div>
-      {/* <AboutHeader /> */}
+      <AboutBanner />
       <AboutNavbar />
       <Outlet />
     </div>
