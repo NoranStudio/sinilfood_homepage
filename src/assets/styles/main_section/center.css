@@ -122,11 +122,9 @@
 
 
 @media screen and (max-width: 768px) {
-  .center-container {
-    height: 1800px;
-  }
   .center-section {
     padding-top: 80px;
+    padding-bottom: 40px;
   }
   .center-contents {
     width: calc(100% - 60px);

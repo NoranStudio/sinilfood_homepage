@@ -12,8 +12,8 @@ import "../../assets/styles/main_section/home.css";
 function App() {
   return (
     <div className="home">
-      {/* <MainBanner /> */}
-      {/* <Slogan /> */}
+      <MainBanner />
+      <Slogan />
       <CenterContents />
       {/* <Slider /> */}
       {/* <News /> */}
