@@ -8,6 +8,7 @@ const BaseLayout = () => (
       display: "flex",
       flexDirection: "column",
       minHeight: "100vh",
+      maxWidth: "1920px",
     }}
   >
     <Header />

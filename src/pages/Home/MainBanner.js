@@ -51,6 +51,15 @@ const MainBanner = () => {
                 <b>신일푸드</b> 만의 독자적인 전용 물류 시스템으로 <br />
                 전국적 유통 체인망이 구축되어 있습니다.
               </p>
+              <div className="banner-navigation">
+                <HiOutlineArrowNarrowLeft
+                  onClick={() => swiperRef.current?.slidePrev()}
+                />
+                <b>{currentPage.toString().padStart(2, "0")}</b> <p>03</p>
+                <HiOutlineArrowNarrowRight
+                  onClick={() => swiperRef.current?.slideNext()}
+                />
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -70,6 +79,15 @@ const MainBanner = () => {
                 깨끗하고 믿을 수 있는 식용유 및 푸드 유통기업 <br />
                 신뢰와 품질을 보장하는 <b>신일푸드</b>
               </p>
+              <div className="banner-navigation">
+                <HiOutlineArrowNarrowLeft
+                  onClick={() => swiperRef.current?.slidePrev()}
+                />
+                <b>{currentPage.toString().padStart(2, "0")}</b> <p>03</p>
+                <HiOutlineArrowNarrowRight
+                  onClick={() => swiperRef.current?.slideNext()}
+                />
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -82,26 +100,24 @@ const MainBanner = () => {
             <div className="banner-texts">
               <img src={shinliFoodImage} alt="신일푸드" />
               <p className="banner-title">
-                국내 외식산업의 미래와
-                함께하는 <b>신일푸드</b>
+                국내 외식산업의 미래와 함께하는 <b>신일푸드</b>
               </p>
               <p className="banner-description">
                 국내 외식산업의 성장과 함께, 풍부한 경험과 <br />
                 독보적인 경쟁력으로 미래를 열어갑니다.
               </p>
+              <div className="banner-navigation">
+                <HiOutlineArrowNarrowLeft
+                  onClick={() => swiperRef.current?.slidePrev()}
+                />
+                <b>{currentPage.toString().padStart(2, "0")}</b> <p>03</p>
+                <HiOutlineArrowNarrowRight
+                  onClick={() => swiperRef.current?.slideNext()}
+                />
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
-
-      <div className="mainbanner-navigation">
-        <HiOutlineArrowNarrowLeft
-          onClick={() => swiperRef.current?.slidePrev()}
-        />{" "}
-        <b>{currentPage.toString().padStart(2, "0")}</b> <p>03</p>
-        <HiOutlineArrowNarrowRight
-          onClick={() => swiperRef.current?.slideNext()}
-        />
       </div>
 
       <img
@@ -111,14 +127,14 @@ const MainBanner = () => {
       />
 
       {/* 우측 사이드 버튼 */}
-      <div className="side-buttons">
+      {/* <div className="side-buttons">
         <a href="#contact" className="contact-button">
           <img src={phoneIcon} alt="Phone Icon" className="icon-image" />
         </a>
         <a href="#contact" className="contact-button">
           <img src={headsetIcon} alt="Headset Icon" className="icon-image" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
