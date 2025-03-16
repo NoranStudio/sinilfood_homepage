@@ -16,7 +16,7 @@ function App() {
       <Slogan />
       <CenterContents />
       <Slider />
-      {/* <News /> */}
+      <News />
       {/* <CS /> */}
     </div>
   );
