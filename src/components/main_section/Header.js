@@ -53,7 +53,7 @@ const Header = () => {
         </a>
         <div className="nav-pc">
           {menus.map((menu) => (
-            <a href={menu.url} className={`${prefix === menu.url && "active"}`}>
+            <a key={menu.id} href={menu.url} className={`${prefix === menu.url && "active"}`}>
               {menu.name}
             </a>
           ))}
