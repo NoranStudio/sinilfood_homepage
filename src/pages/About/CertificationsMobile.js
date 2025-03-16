@@ -25,18 +25,18 @@ const CertificationsMobile = () => {
           깨끗한 제품을 공급하고 있습니다.
         </p>
       </div>
-      <img src={facilityImg1} class="about__cert__banner" alt="facility" />
-      <img src={facilityImg2} class="about__cert__banner" alt="facility" />
-      <div class="about__cert-mobile__docs">
-        <div class="about__cert-mobile__doc">
+      <img src={facilityImg1} className="about__cert__banner" alt="facility" />
+      <img src={facilityImg2} className="about__cert__banner" alt="facility" />
+      <div className="about__cert-mobile__docs">
+        <div className="about__cert-mobile__doc">
           <img src={certImg1} alt="cert" />
           <p>폐기물처리 신고증명서</p>
         </div>
-        <div class="about__cert-mobile__doc">
+        <div className="about__cert-mobile__doc">
           <img src={certImg2} alt="cert" />
           <p>폐기물 수집 운반업 허가증</p>
         </div>
-        <div class="about__cert-mobile__doc">
+        <div className="about__cert-mobile__doc">
           <img src={certImg3} alt="cert" />
           <p>
             폐기물 수집 운반업자 등의

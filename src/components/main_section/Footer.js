@@ -19,10 +19,10 @@ function Footer() {
           </div>
         </div>
         <div className="right">
-          <a href="#none">회사소개</a>
+          {/* <a href="#none">회사소개</a>
           <a href="#none">사업영역</a>
           <a href="#none">제품소개</a>
-          <a href="#none">고객서비스</a>
+          <a href="#none">고객서비스</a> */}
         </div>
       </div>
     </footer>

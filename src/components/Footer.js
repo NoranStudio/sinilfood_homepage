@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="footer__links">
+    <footer className="footer">
+      <div className="footer__inner">
+        <div className="footer__links">
           <img src={logo} alt="신일푸드 로고" className="footer__logo" />
           <ul>
             <li>
@@ -24,8 +24,8 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div class="footer__info">
-          <div class="footer__contact">
+        <div className="footer__info">
+          <div className="footer__contact">
             <p>주소 | 경상남도 김해시 생림면 상동로 78-63</p>
             <p>대표번호 | 055) 334-7789</p>
           </div>

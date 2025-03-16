@@ -4,12 +4,12 @@ import logo from '../assets/img/sinil_logo.png'; // 로고 이미지 경로 수�
 
 function FooterDesktop() {
     return (
-        <footer class="footer">
-            <div class="footer-content">
+        <footer className="footer">
+            <div className="footer-content">
                 <div>
                     <img src={logo} alt="신일푸드 로고" className="footer-logo" />
                 </div>
-                <div class="footer-links">
+                <div className="footer-links">
                     <ul>
                         <li>
                             <a href="#about">회사소개</a>
@@ -25,7 +25,7 @@ function FooterDesktop() {
                         </li>
                     </ul>
                 </div>
-                <div class="footer-info">
+                <div className="footer-info">
                     <p>주소 | 경상남도 김해시 생림면 상동로 78-63 &nbsp;&nbsp; 대표번호 | 055) 334-7789</p>
                     <p>Copyright© 2024 (주)신일푸드. All rights reserved.</p>
                 </div>

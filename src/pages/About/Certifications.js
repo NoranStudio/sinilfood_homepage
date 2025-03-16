@@ -18,8 +18,8 @@ const Certifications = () => {
     return <CertificationsMobile />;
   } else {
     return (
-      <div class="about__cert">
-        <div class="about__cert__detail">
+      <div className="about__cert">
+        <div className="about__cert__detail">
           <div>
             <h1>식품안전관리인증 HACCP</h1>
             <p>
@@ -34,21 +34,21 @@ const Certifications = () => {
             <img src={haccpDocImg} alt="haccp-doc" />
           </div>
         </div>
-        <div class="about__cert__contents">
+        <div className="about__cert__contents">
           <h1>정직하고 위생적인 제조시설</h1>
         </div>
-        <img src={facilityImg1} class="about__cert__banner" alt="facility" />
-        <img src={facilityImg2} class="about__cert__banner" alt="facility" />
-        <div class="about__cert__docs">
-          <div class="about__cert__doc">
+        <img src={facilityImg1} className="about__cert__banner" alt="facility" />
+        <img src={facilityImg2} className="about__cert__banner" alt="facility" />
+        <div className="about__cert__docs">
+          <div className="about__cert__doc">
             <img src={certImg1} alt="cert" />
             <p>폐기물처리 신고증명서</p>
           </div>
-          <div class="about__cert__doc">
+          <div className="about__cert__doc">
             <img src={certImg2} alt="cert" />
             <p>폐기물 수집 운반업 허가증</p>
           </div>
-          <div class="about__cert__doc">
+          <div className="about__cert__doc">
             <img src={certImg3} alt="cert" />
             <p>
               폐기물 수집 운반업자 등의
