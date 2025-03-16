@@ -17,7 +17,7 @@ function App() {
       <CenterContents />
       <Slider />
       <News />
-      {/* <CS /> */}
+      <CS />
     </div>
   );
 }
