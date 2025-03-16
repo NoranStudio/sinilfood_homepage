@@ -48,9 +48,11 @@ const Header = () => {
   return (
     <header className={isScrolled ? "scrolled" : ""}>
       <div className="header-contents">
-        <a href="/">
-          <img src={logo} alt="Sinilfood Logo" />
-        </a>
+        <h1>
+          <a href="/">
+            <img src={logo} alt="Sinilfood Logo" />
+          </a>
+        </h1>
         <div className="nav-pc">
           {menus.map((menu) => (
             <a key={menu.id} href={menu.url} className={`${prefix === menu.url && "active"}`}>
