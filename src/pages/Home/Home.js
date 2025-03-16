@@ -14,7 +14,7 @@ function App() {
     <div className="home">
       <MainBanner />
       <Slogan />
-      <CenterContents />
+      {/* <CenterContents /> */}
       {/* <Slider /> */}
       {/* <News /> */}
       {/* <CS /> */}

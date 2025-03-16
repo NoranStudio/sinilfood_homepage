@@ -35,31 +35,43 @@ const MainBanner = () => {
           onSlideChange={(swiper) => setCurrentPage(swiper.realIndex + 1)}
         >
           <SwiperSlide>
-            <img src={bannerImg1} alt="배너이미지" className="banner-img" />
-            <img
-              src={bannerImg1Mo}
-              alt="배너이미지"
-              className="banner-img-mo"
-            />
-            <div className="banner-texts">
-              <img src={shinliFoodImage} alt="신일푸드" />
-              <p className="banner-title">
-                식용유 및 식품 유통 <br />
-                전문기업 <b>신일푸드</b>
-              </p>
-              <p className="banner-description">
-                <b>신일푸드</b> 만의 독자적인 전용 물류 시스템으로 <br />
-                전국적 유통 체인망이 구축되어 있습니다.
-              </p>
-              <div className="banner-navigation">
-                <HiOutlineArrowNarrowLeft
-                  onClick={() => swiperRef.current?.slidePrev()}
-                />
-                <b>{currentPage.toString().padStart(2, "0")}</b> <p>03</p>
-                <HiOutlineArrowNarrowRight
-                  onClick={() => swiperRef.current?.slideNext()}
+            <div className="banner-img-wrapper">
+              <div className="scroll-down-wrapper">
+                <img
+                  src={scrollDown}
+                  alt="스크롤다운이미지"
+                  className="scroll-down-img"
                 />
               </div>
+              <div className="banner-img-wrapper-mo">
+                <img src={bannerImg1} alt="배너이미지" className="banner-img" />
+                <img
+                  src={bannerImg1Mo}
+                  alt="배너이미지"
+                  className="banner-img-mo"
+                />
+                <div className="banner-texts">
+                  <img src={shinliFoodImage} alt="신일푸드" />
+                  <p className="banner-title">
+                    식용유 및 식품 유통 <br />
+                    전문기업 <b>신일푸드</b>
+                  </p>
+                  <p className="banner-description">
+                    <b>신일푸드</b> 만의 독자적인 전용 물류 시스템으로 <br />
+                    전국적 유통 체인망이 구축되어 있습니다.
+                  </p>
+                  <div className="banner-navigation">
+                    <HiOutlineArrowNarrowLeft
+                      onClick={() => swiperRef.current?.slidePrev()}
+                    />
+                    <b>{currentPage.toString().padStart(2, "0")}</b> <p>03</p>
+                    <HiOutlineArrowNarrowRight
+                      onClick={() => swiperRef.current?.slideNext()}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="blank-div" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -119,12 +131,6 @@ const MainBanner = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-
-      <img
-        src={scrollDown}
-        alt="스크롤다운이미지"
-        className="scroll-down-img"
-      />
 
       {/* 우측 사이드 버튼 */}
       {/* <div className="side-buttons">
