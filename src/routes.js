@@ -9,7 +9,7 @@ import AboutCompany from "./pages/About/AboutCompany";
 import AboutLayout from "./components/about/AboutLayout";
 import FCProducts from "./pages/Business/FCProducts";
 import CustomerSupport from "./pages/CustomerService/CustomerSupport";
-import BaseLayout from "./components/BaseLayout";
+import BaseLayout from "./components/baseLayout";
 import Organization from "./pages/About/Organization";
 import Location from "./pages/About/Location";
 import History from "./pages/About/History";

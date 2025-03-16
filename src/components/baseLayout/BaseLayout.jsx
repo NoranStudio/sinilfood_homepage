@@ -1,16 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
-import Header from "./main_section/Header";
+import Header from "../header";
 const BaseLayout = () => (
-  <div
-    className="base-layout"
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      minHeight: "100vh",
-      maxWidth: "1920px",
-    }}
-  >
+  <div className="base-layout">
     <Header />
     <Outlet />
     <Footer />
