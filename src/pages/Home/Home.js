@@ -15,7 +15,7 @@ function App() {
       <MainBanner />
       <Slogan />
       <CenterContents />
-      {/* <Slider /> */}
+      <Slider />
       {/* <News /> */}
       {/* <CS /> */}
     </div>

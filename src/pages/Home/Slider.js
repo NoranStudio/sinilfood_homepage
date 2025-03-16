@@ -1,4 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode, Navigation } from "swiper/modules";
+import React, { useRef } from "react";
 
 import franchise1Logo from "../../assets/img/franchise/franchise1.png";
 import franchise2Logo from "../../assets/img/franchise/franchise2.png";
@@ -30,19 +32,63 @@ import franchise27Logo from "../../assets/img/franchise/franchise27.png";
 import franchise28Logo from "../../assets/img/franchise/franchise28.png";
 
 import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
 import "../../assets/styles/main_section/slider.css";
 
 const Slider = () => {
+  const swiperRef = useRef(null);
+
   return (
     <div className="slider-section">
       <h3>프랜차이즈 물류업체</h3>
       <Swiper
+        modules={[Autoplay, FreeMode, Navigation]}
         breakpoints={{
-          768: { spaceBetween: 24 },
-          480: { spaceBetween: 5 },
-          0: { spaceBetween: 5 },
+          1024: { 
+            slidesPerView: 4.5,
+            spaceBetween: 24
+          },
+          768: { 
+            slidesPerView: 3.5,
+            spaceBetween: 20
+          },
+          480: { 
+            slidesPerView: 2.5,
+            spaceBetween: 15
+          },
+          0: { 
+            slidesPerView: 2.2,
+            spaceBetween: 10
+          },
         }}
-        slidesPerView="auto"
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        freeMode={{
+          enabled: true,
+          momentumRatio: 0.8,
+          momentumBounce: false,
+          minimumVelocity: 0.02
+        }}
+        loop={true}
+        speed={800}
+        loopAdditionalSlides={10}
+        grabCursor={true}
+        threshold={5}
+        touchRatio={1.5}
+        touchAngle={45}
+        preventClicks={false}
+        preventClicksPropagation={false}
+        simulateTouch={true}
+        resistance={false}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        watchSlidesProgress={true}
+        centerInsufficientSlides={true}
       >
         <SwiperSlide className="hover">
           <img src={franchise1Logo} alt="프랜차이즈" />
