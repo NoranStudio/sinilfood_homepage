@@ -1,2 +1,14 @@
-@import "./about/about-header.css";
+@import "./about/about-banner.css";
 @import "./about/about-nav.css";
+
+.App {
+  text-align: start;
+}
+
+h1 {
+  margin: 20px 0 20px 0;
+}
+
+p {
+  margin: 10px 0 10px 0;
+}

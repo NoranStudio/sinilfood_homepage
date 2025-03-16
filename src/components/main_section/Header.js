@@ -11,9 +11,9 @@ const Header = () => {
   const { pathname } = useLocation();
   const prefix = pathname.split("/")[1];
   const menus = [
-    { id: 1, name: "회사소개", url: "" },
+    { id: 1, name: "회사소개", url: "about" },
     { id: 2, name: "사업소개", url: "business" },
-    { id: 3, name: "제품소개", url: "about" },
+    { id: 3, name: "제품소개", url: "products" },
     { id: 4, name: "고객서비스", url: "customer-service" },
   ];
 

@@ -34,37 +34,42 @@ const InfoOverlay = ({ title, address, phone, fax }) => (
         </p>
       </div>
     </div>
-    <div className="info-overlay__link">
+    <a
+      className="info-overlay__link"
+      href="https://map.naver.com/p/search/신일푸드?c=15.00,0,0,0,dh"
+    >
       <p>지도보러가기</p>
       <ArrowRightIcon />
-    </div>
+    </a>
   </div>
 );
 
 const KakaoMap = ({ className = "", position }) => {
   useEffect(() => {
     const container = document.getElementById("kakao-map");
-    const options = {
-      center: new window.kakao.maps.LatLng(
-        info[position].center.lat,
-        info[position].center.lng
-      ),
-      level: 3,
-    };
-    const map = new window.kakao.maps.Map(container, options);
-    var marker = new window.kakao.maps.Marker({
-      position: options.center,
-    });
-    marker.setMap(map);
+    if (window?.kakao) {
+      const options = {
+        center: new window.kakao.maps.LatLng(
+          info[position].center.lat,
+          info[position].center.lng
+        ),
+        level: 3,
+      };
+      const map = new window.kakao.maps.Map(container, options);
+      var marker = new window.kakao.maps.Marker({
+        position: options.center,
+      });
+      marker.setMap(map);
 
-    new window.kakao.maps.CustomOverlay({
-      content: renderToString(InfoOverlay(info[position])),
-      map,
-      position: new window.kakao.maps.LatLng(
-        info[position].center.lat,
-        info[position].center.lng
-      ),
-    });
+      new window.kakao.maps.CustomOverlay({
+        content: renderToString(InfoOverlay(info[position])),
+        map,
+        position: new window.kakao.maps.LatLng(
+          info[position].center.lat,
+          info[position].center.lng
+        ),
+      });
+    }
   }, [position]);
 
   return <div id="kakao-map" className={className} />;

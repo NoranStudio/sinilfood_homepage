@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 
 const CI = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width:767px)",
+    query: "(max-width:768px)",
   });
 
   return (
