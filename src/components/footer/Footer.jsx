@@ -1,6 +1,6 @@
 import React from "react";
-import "../assets/styles/footer.css"; // 전역 스타일 가져오기
-import logo from "../assets/img/sinil_logo.png"; // 로고 이미지 경로 수정
+import "./footer.css"; // 전역 스타일 가져오기
+import logo from "../../assets/img/sinil_logo.png"; // 로고 이미지 경로 수정
 import { Link } from "react-router-dom";
 
 function Footer() {
