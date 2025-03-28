@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import shinliFoodImage from "../../assets/img/SHINLI FOOD white.png"; // SHINLI FOOD 이미지
@@ -21,6 +21,20 @@ import {
 const MainBanner = () => {
   const swiperRef = useRef(null);
   const [currentPage, setCurrentPage] = useState(1);
+
+  const [isScrolled, setIsScrolled] = useState(false); // fixma #2 의견에 때라 지우든 계속 추가 하든 
+
+  const handleScroll = () => {
+    setIsScrolled(true);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
   const bannerData = [
     {
@@ -80,7 +94,7 @@ const MainBanner = () => {
         >
           {bannerData.map((banner, index) => (
             <SwiperSlide key={index}>
-              <div 
+              <div
                 className="banner-slide"
                 style={{
                   "--pc-background": `url(${banner.pcImg})`,
@@ -88,6 +102,7 @@ const MainBanner = () => {
                 }}
               >
                 <div className="banner-content-wrapper">
+
                   <div className="scroll-down-wrapper">
                     <img
                       src={scrollDown}
