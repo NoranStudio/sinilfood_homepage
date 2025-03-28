@@ -54,6 +54,17 @@ const MainBanner = () => {
       ),
     },
     {
+      pcImg: bannerImg3,
+      mobileImg: bannerImg3Mo,
+      title: <>국내 외식산업의 미래와 <br />함께하는 <b>신일푸드</b></>,
+      description: (
+        <>
+          국내 외식산업의 성장과 함께, 풍부한 경험과 <br />
+          독보적인 경쟁력으로 미래를 열어갑니다.
+        </>
+      ),
+    },
+    {
       pcImg: bannerImg2,
       mobileImg: bannerImg2Mo,
       title: (
@@ -66,17 +77,6 @@ const MainBanner = () => {
         <>
           깨끗하고 믿을 수 있는 식용유 및 푸드 유통기업 <br />
           신뢰와 품질을 보장하는 <b>신일푸드</b>
-        </>
-      ),
-    },
-    {
-      pcImg: bannerImg3,
-      mobileImg: bannerImg3Mo,
-      title: <>국내 외식산업의 미래와 함께하는 <b>신일푸드</b></>,
-      description: (
-        <>
-          국내 외식산업의 성장과 함께, 풍부한 경험과 <br />
-          독보적인 경쟁력으로 미래를 열어갑니다.
         </>
       ),
     },
