@@ -32,7 +32,7 @@ function CenterContents() {
     },
     {
       id: 3,
-      title: "뛰어난 상품성",
+      title: "뛰어난 상품력",
       subtitle: "전국 어디서나 신속하고 일관된 품질",
       image: truckImage3,
     },
