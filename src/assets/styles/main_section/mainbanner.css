@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  aspect-ratio: 1920 / 950;
+  max-width: 1920px;
+  height: 950px;
   position: relative;
-  /* background-color: #E3C88F; */
   overflow: hidden;
+  min-width: 1440px;
 }
 
 .banner-contents {
@@ -14,6 +15,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+  
 }
 
 .banner-contents .swiper {
@@ -38,7 +40,8 @@
   width: 100%;
   height: 100%;
   display: flex;
-  padding: 0 clamp(60px, 8vw, 100px);
+  box-sizing: border-box;
+  padding: 150px 320px 0px 320px;
 }
 
 /* 스크롤 다운 버튼 */
@@ -72,19 +75,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: clamp(15px, 1.5vw, 24px);
-  padding-left: clamp(40px, 5vw, 80px);
-  max-width: min(800px, 60%);
+  gap: 24px;
 }
 
 .banner-texts img {
-  width: clamp(160px, 12vw, 210px);
+  width: 210px;
   height: auto;
-  margin-bottom: clamp(8px, 0.8vw, 10px);
+  margin-bottom: 10px;
 }
 
 .banner-title {
-  font-size: clamp(36px, 3vw, 50px);
+  font-size: 50px;
   font-weight: 200;
   color: #fff;
   letter-spacing: -0.05em;
@@ -94,7 +95,7 @@
 
 .banner-description {
   color: #fff;
-  font-size: clamp(18px, 1.5vw, 24px);
+  font-size: 24px;
   line-height: 1.5;
   letter-spacing: -0.05em;
   font-weight: 300;

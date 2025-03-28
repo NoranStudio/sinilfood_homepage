@@ -1,14 +1,11 @@
 .home {
-  /* background-color: blueviolet; */
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
   .home {
-    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
-
   }
 }

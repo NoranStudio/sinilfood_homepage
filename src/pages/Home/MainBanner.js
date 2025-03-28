@@ -102,14 +102,7 @@ const MainBanner = () => {
                 }}
               >
                 <div className="banner-content-wrapper">
-
-                  <div className="scroll-down-wrapper">
-                    <img
-                      src={scrollDown}
-                      alt="스크롤다운이미지"
-                      className="scroll-down-img"
-                    />
-                  </div>
+                  
                   <div className="banner-texts">
                     <img src={shinliFoodImage} alt="신일푸드" />
                     <p className="banner-title">{banner.title}</p>
@@ -125,6 +118,13 @@ const MainBanner = () => {
                     </div>
                   </div>
                 </div>
+                {/* <div className="scroll-down-wrapper">
+                    <img
+                      src={scrollDown}
+                      alt="스크롤다운이미지"
+                      className="scroll-down-img"
+                    />
+                  </div> */}
               </div>
             </SwiperSlide>
           ))}
