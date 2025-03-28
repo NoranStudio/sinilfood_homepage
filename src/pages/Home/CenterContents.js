@@ -38,7 +38,7 @@ function CenterContents() {
     },
     {
       id: 4,
-      title: "편리한 보관 시스템",
+      title: "편리한 발주 시스템",
       subtitle: "전국 어디서나 신속하고 일관된 품질",
       image: truckImage4,
     },
