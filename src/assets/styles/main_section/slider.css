@@ -72,7 +72,7 @@
 }
 
 /* 태블릿 대응 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .slider-section {
     padding: 80px 0;
   }

@@ -124,7 +124,7 @@
 }
 
 /* 태블릿 대응 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .banner-section {
     aspect-ratio: 1024 / 700;
   }

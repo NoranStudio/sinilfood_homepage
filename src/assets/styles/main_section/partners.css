@@ -51,7 +51,7 @@
   object-fit: fill;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .new-partners-header {
     padding: 40px
   }
