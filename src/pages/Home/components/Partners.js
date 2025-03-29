@@ -16,6 +16,7 @@ import "./partners.css";
 const Partners = () => {
   return (
     <div className="new-partners-header">
+      <div className="new-partners-header-content">
         <img
           src={shinliFoodyellowImage}
           alt="SHINLI FOOD"
@@ -26,6 +27,7 @@ const Partners = () => {
           상생경영을 통해 더 큰 가치를 만들어갑니다.
         </h2>
         <h3>협력사 및 제조사</h3>
+
         <div className="new-partners-grid">
           <div className="partner-item hover">
             <img src={cjFreshwayLogo} alt="CJ 프레시웨이" />
@@ -60,6 +62,7 @@ const Partners = () => {
           <div className="partner-item hover">
             <img src={bnbKoreaLogo} alt="BNB Korea" />
           </div>
+        </div>
       </div>
     </div>
   );
