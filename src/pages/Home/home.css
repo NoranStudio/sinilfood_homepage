@@ -2,6 +2,7 @@
   /* background-color: blueviolet; */
   display: flex;
   flex-direction: column;
+  gap: 180px;
 }
 
 @media (max-width: 1279px) {
