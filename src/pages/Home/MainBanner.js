@@ -96,9 +96,10 @@ const MainBanner = () => {
             <SwiperSlide key={index}>
               <div
                 className="banner-slide"
-                style={{
-                  "--pc-background": `url(${banner.pcImg})`,
-                  "--mobile-background": `url(${banner.mobileImg})`
+                style={window.innerWidth > 768 ? {
+                  backgroundImage: `url(${banner.pcImg})`
+                } : {
+                  backgroundImage: `url(${banner.mobileImg})`
                 }}
               >
                 <div className="banner-content-wrapper">
