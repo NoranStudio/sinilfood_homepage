@@ -9,7 +9,7 @@ import history2019Img from "@assets/img/about/history/2019.png";
 import history2015Img from "@assets/img/about/history/2015.png";
 import history2013Img from "@assets/img/about/history/2013.png";
 
-import "@assets/styles/about/about-history.css";
+import "./about-history.css";
 
 const historyItems = [
   {

@@ -7,7 +7,7 @@ import facilityImg2 from "@assets/img/about/cert/facility2.png";
 import certImg1 from "@assets/img/about/cert/cert1.png";
 import certImg2 from "@assets/img/about/cert/cert2.png";
 import certImg3 from "@assets/img/about/cert/cert3.png";
-import "@assets/styles/about/about-cert-mobile.css";
+import "./about-cert-mobile.css";
 
 const CertificationsMobile = () => {
   return (

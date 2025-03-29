@@ -1,6 +1,6 @@
 import React from "react";
 
-import "@assets/styles/about/about-history-mobile.css";
+import "./about-history-mobile.css";
 
 const HistoryMobile = ({ historyItems }) => {
   return (
