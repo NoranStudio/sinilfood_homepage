@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/img/sinil_logo.png";
 import navWhite from "../../assets/img/nav_white.png";
 import "./header.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import navGray from "../../assets/img/nav_gray.png";
 
 const Header = () => {
@@ -49,15 +49,15 @@ const Header = () => {
     <header className={isScrolled ? "scrolled" : ""}>
       <div className="header-contents">
         <h1>
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="Sinilfood Logo" />
-          </a>
+          </Link>
         </h1>
         <div className="nav-pc">
           {menus.map((menu) => (
-            <a key={menu.id} href={menu.url} className={`${prefix === menu.url && "active"}`}>
+            <Link key={menu.id} to={menu.url} className={`${prefix === menu.url && "active"}`}>
               {menu.name}
-            </a>
+            </Link>
           ))}
         </div>
         <img
@@ -70,9 +70,9 @@ const Header = () => {
           <aside>
             <div className="header-contents">
               <h1>
-                <a href="/">
+                <Link to="/">
                   <img src={logo} alt="Sinilfood Logo" />
-                </a>
+                </Link>
               </h1>
               <img
                 src={navGray}
