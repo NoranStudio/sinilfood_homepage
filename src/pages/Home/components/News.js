@@ -5,20 +5,11 @@ import leftbutton from "@assets/img/left_button.png";
 import rightbutton from "@assets/img/right_button.png";
 
 import "./news.css";
+import { useMediaQuery } from "react-responsive";
 
 const News = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
   const swiperRef = useRef(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1280);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize(); // 초기 실행
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <div className="new-news-section">

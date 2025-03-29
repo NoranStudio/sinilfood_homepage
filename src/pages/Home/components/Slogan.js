@@ -9,29 +9,19 @@ import sloganMainBanner2 from "@assets/img/slogan-main2.png";
 import sloganSubBanner1 from "@assets/img/slogan-sub1.png";
 import sloganSubBanner2 from "@assets/img/slogan-sub2.png";
 import Arrow from "@assets/img/slogan-arrow.png";
+import { useMediaQuery } from "react-responsive";
 
 const Slogan = () => {
   const swiper1Ref = useRef(null); // 첫 번째 Swiper : 메인
   const swiper2Ref = useRef(null); // 두 번째 Swiper : 서브
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1279);
+  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
 
   const handleNext = () => {
     swiper1Ref.current?.slideNext();
     swiper2Ref.current?.slideNext();
 
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1279);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <div className="slogan-section">

@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
   width: 100%;
 }
 
@@ -15,7 +13,6 @@
 }
 
 .about__ci__desc {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   font-size: 22px;
@@ -27,7 +24,7 @@
 .about__ci__download {
   border: 1px solid #499953;
   padding: 10px 50px 10px 50px;
-  margin: 30px 0 60px 0;
+  margin: 30px 0 0px 0;
   text-decoration: none;
   color: #000;
 }

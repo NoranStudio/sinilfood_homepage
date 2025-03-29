@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import KakaoMap from "../../components/KakaoMap";
+import KakaoMap from "../../../components/KakaoMap";
 import { ReactComponent as ArrowRightIcon } from "@assets/img/arrow-right.svg";
-import "@assets/styles/about/about-location.css";
+import "./about-location.css";
 
 const Location = () => {
   const [activate, setActivate] = useState("hwaseong");
@@ -25,7 +25,7 @@ const Location = () => {
           </div>
         </div>
       </div>
-      <KakaoMap position={activate} className="about__location__map" />
+      <KakaoMap position={activate} className={`about__location__map ${activate}`} />
       <div className="about__location__links">
         <a
           className="about__location__link"
@@ -34,6 +34,8 @@ const Location = () => {
               ? "https://kko.kakao.com/UbfFIQQg8W"
               : "https://kko.kakao.com/vLrG-zgISx"
           }
+          target="_blank"
+          rel="noopener noreferrer"
         >
           카카오 맵<span>KAKAO MAP</span>
           <ArrowRightIcon />
@@ -45,6 +47,8 @@ const Location = () => {
               ? "https://naver.me/GmbiyQ2y"
               : "https://naver.me/xpr5bxEp"
           }
+          target="_blank"
+          rel="noopener noreferrer"
         >
           네이버 맵<span>NAVER MAP</span>
           <ArrowRightIcon />

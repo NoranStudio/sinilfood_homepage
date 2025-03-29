@@ -2,19 +2,10 @@ import React, { useState, useEffect } from "react";
 import counsel_image from "@assets/img/counsel_image.png";
 
 import "./cs.css";
+import { useMediaQuery } from "react-responsive";
 
 const CS = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1279);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize(); // 초기 실행
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
 
   return (
     <div className="cs-section">
