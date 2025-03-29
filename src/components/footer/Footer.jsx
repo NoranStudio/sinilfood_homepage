@@ -11,16 +11,16 @@ function Footer() {
           <img src={logo} alt="신일푸드 로고" className="footer__logo" />
           <ul>
             <li>
-              <Link href="/about">회사소개</Link>
+              <Link to="/about">회사소개</Link>
             </li>
             <li>
-              <Link href="/business">사업영역</Link>
+              <Link to="/business">사업영역</Link>
             </li>
             <li>
-              <Link href="/products">제품소개</Link>
+              <Link to="/products">제품소개</Link>
             </li>
             <li>
-              <Link href="/services">고객서비스</Link>
+              <Link to="/services">고객서비스</Link>
             </li>
           </ul>
         </div>
