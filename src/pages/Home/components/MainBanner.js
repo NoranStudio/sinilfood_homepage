@@ -31,6 +31,7 @@ const MainBanner = () => {
 
   const handleResize = () => {
     setIsMobile(window.innerWidth < 1279);
+    console.log(window.innerWidth);
   };
 
   useEffect(() => {
@@ -41,7 +42,6 @@ const MainBanner = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
   const bannerData = [
     {

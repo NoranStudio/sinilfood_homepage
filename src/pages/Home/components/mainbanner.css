@@ -126,11 +126,10 @@
 
 @media (max-width: 1279px) {
   .banner-section {
-    width: 100%;
+    aspect-ratio: 360 / 640
   }
 
   .banner-slide {
-    background-image: var(--mobile-background);
     border-radius: 0;
   }
 
