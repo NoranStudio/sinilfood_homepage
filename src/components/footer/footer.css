@@ -5,16 +5,15 @@ footer {
   width: 100%;
   color: #fff;
   box-sizing: border-box;
-  padding: 20px;
 }
 
 .footer__inner {
+  width: 1280px;
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  max-width: 1920px;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .footer__links {

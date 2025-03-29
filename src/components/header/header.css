@@ -32,7 +32,6 @@ header.scrolled .nav-pc a.active {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  box-sizing: border-box;
 }
 
 .nav-mo {
