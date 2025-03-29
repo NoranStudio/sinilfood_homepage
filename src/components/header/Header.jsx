@@ -48,14 +48,16 @@ const Header = () => {
   return (
     <header className={isScrolled ? "scrolled" : ""}>
       <div className="header-contents">
-        <h1>
-          <Link to="/">
-            <img src={logo} alt="Sinilfood Logo" />
-          </Link>
-        </h1>
+        <Link to="/">
+          <img className="header-logo" src={logo} alt="Sinilfood Logo" />
+        </Link>
         <div className="nav-pc">
           {menus.map((menu) => (
-            <Link key={menu.id} to={menu.url} className={`${prefix === menu.url && "active"}`}>
+            <Link
+              key={menu.id}
+              to={menu.url}
+              className={`${prefix === menu.url && "active"}`}
+            >
               {menu.name}
             </Link>
           ))}
@@ -68,61 +70,61 @@ const Header = () => {
         />
         {isOpenMenu && (
           <aside>
-            <div className="header-contents">
-              <h1>
+            <div className="aside-header">
+              <div className="header-contents">
                 <Link to="/">
-                  <img src={logo} alt="Sinilfood Logo" />
+                  <img className="header-logo" src={logo} alt="Sinilfood Logo" />
                 </Link>
-              </h1>
-              <img
-                src={navGray}
-                alt="nav"
-                className="nav-mo"
-                onClick={handleClickToggleMenu}
-              />
-            </div>
-            <div className="aside-contents-container">
-              <div className="aside-contents">
-                <p className="aside-contents-title">회사소개</p>
-                <div className="aside-menus">
-                  <p className="aside-menu">회사소개</p>
-                  <p className="aside-menu">CI</p>
-                  <p className="aside-menu">인증 및 허가증</p>
-                </div>
-                <div className="aside-menus">
-                  <p className="aside-menu">찾아오시는 길</p>
-                  <p className="aside-menu">연혁</p>
-                  <p className="aside-menu">조직도</p>
-                </div>
+                <img
+                  src={navGray}
+                  alt="nav"
+                  className="nav-mo"
+                  onClick={handleClickToggleMenu}
+                />
               </div>
-              <div className="aside-contents">
-                <p className="aside-contents-title">사업영역</p>
-                <div className="aside-menus">
-                  <p className="aside-menu">전용유 제작</p>
-                  <p className="aside-menu">식용유 종류</p>
-                  <p className="aside-menu">신재생에너지 사업</p>
+              <div className="aside-contents-container">
+                <div className="aside-contents">
+                  <p className="aside-contents-title">회사소개</p>
+                  <div className="aside-menus">
+                    <p className="aside-menu">회사소개</p>
+                    <p className="aside-menu">CI</p>
+                    <p className="aside-menu">인증 및 허가증</p>
+                  </div>
+                  <div className="aside-menus">
+                    <p className="aside-menu">찾아오시는 길</p>
+                    <p className="aside-menu">연혁</p>
+                    <p className="aside-menu">조직도</p>
+                  </div>
                 </div>
-                <div className="aside-menus">
-                  <p className="aside-menu">제조사 현황</p>
-                  <p className="aside-menu">신일푸드 물류시스템</p>
+                <div className="aside-contents">
+                  <p className="aside-contents-title">사업영역</p>
+                  <div className="aside-menus">
+                    <p className="aside-menu">전용유 제작</p>
+                    <p className="aside-menu">식용유 종류</p>
+                    <p className="aside-menu">신재생에너지 사업</p>
+                  </div>
+                  <div className="aside-menus">
+                    <p className="aside-menu">제조사 현황</p>
+                    <p className="aside-menu">신일푸드 물류시스템</p>
+                  </div>
                 </div>
-              </div>
-              <div className="aside-contents">
-                <p className="aside-contents-title">제품소개</p>
-                <div className="aside-menus">
-                  <p className="aside-menu">자사전용유 | 일반유</p>
-                  <p className="aside-menu">프랜차이즈 전용유</p>
+                <div className="aside-contents">
+                  <p className="aside-contents-title">제품소개</p>
+                  <div className="aside-menus">
+                    <p className="aside-menu">자사전용유 | 일반유</p>
+                    <p className="aside-menu">프랜차이즈 전용유</p>
+                  </div>
                 </div>
-              </div>
-              <div className="aside-contents">
-                <p className="aside-contents-title">고객서비스</p>
-                <div className="aside-menus">
-                  <p className="aside-menu">식용유 종류</p>
-                  <p className="aside-menu">신재생에너지 사업</p>
-                </div>
-                <div className="aside-menus">
-                  <p className="aside-menu">제조사 현황</p>
-                  <p className="aside-menu">신일푸드 물류시스템</p>
+                <div className="aside-contents">
+                  <p className="aside-contents-title">고객서비스</p>
+                  <div className="aside-menus">
+                    <p className="aside-menu">식용유 종류</p>
+                    <p className="aside-menu">신재생에너지 사업</p>
+                  </div>
+                  <div className="aside-menus">
+                    <p className="aside-menu">제조사 현황</p>
+                    <p className="aside-menu">신일푸드 물류시스템</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -3,6 +3,7 @@ header {
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
   z-index: 999;
@@ -34,6 +35,14 @@ header.scrolled .nav-pc a.active {
   padding: 0px 20px;
 }
 
+.header-contents a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-logo {
+  width: 100px;
+}
 .nav-mo {
   display: none;
 }
@@ -60,7 +69,8 @@ header.scrolled .nav-pc a.active {
     min-width: 320px;
   }
   .header-contents {
-    width: calc(100% - 60px);
+    width: 100%;
+    padding: 20px;
   }
   .header-contents h1 {
     margin: 0;
@@ -87,12 +97,20 @@ aside {
   background-color: black;
   z-index: 999;
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aside-header {
+  width: 100%;
+  max-width: 425px;
+  min-width: 320px;
 }
 .aside-contents-container {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 20px;
   color: #fff;
   text-align: right;
   padding: 0 30px;
