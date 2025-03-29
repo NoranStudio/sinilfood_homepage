@@ -6,14 +6,20 @@ import "./slogan.css";
 
 import sloganMainBanner1 from "@assets/img/slogan-main1.png";
 import sloganMainBanner2 from "@assets/img/slogan-main2.png";
+import sloganSubBanner1 from "@assets/img/slogan-sub1.png";
+import sloganSubBanner2 from "@assets/img/slogan-sub2.png";
 import Arrow from "@assets/img/slogan-arrow.png";
 
 const Slogan = () => {
   const swiper1Ref = useRef(null); // 첫 번째 Swiper : 메인
+  const swiper2Ref = useRef(null); // 두 번째 Swiper : 서브
+
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1279);
 
   const handleNext = () => {
     swiper1Ref.current?.slideNext();
+    swiper2Ref.current?.slideNext();
+
   };
 
   useEffect(() => {
@@ -80,6 +86,23 @@ const Slogan = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+          
+          <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              loop={true}
+              onSwiper={(swiper) => (swiper2Ref.current = swiper)}
+              className="slogan-subbanner"
+            >
+              <SwiperSlide>
+                <img src={sloganSubBanner1} alt="서브배너1" />
+                <div className="slogan-banner-contents"></div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={sloganSubBanner2} alt="서브배너2" />
+                <div className="slogan-banner-contents"></div>
+              </SwiperSlide>
+            </Swiper>
           <div className="sloganbanner-navigation">
             <img src={Arrow} alt="arrow" onClick={handleNext} />
           </div>
