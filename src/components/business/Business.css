@@ -1,11 +1,9 @@
 .business-content-section {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 50px 0;
-    position: relative;
-    min-height: 100vh;
-    height: auto;
-    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
 }
 
 .business-content-section h2 {
@@ -20,7 +18,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 115px;
+    width: 1280px;
+    padding: 0 20px;
+    gap: 20px;
 }
 
 .manufacturing-title {
@@ -60,7 +60,7 @@
 }
 
 .feature-section {
-    margin-top: 94px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 80px;
@@ -138,23 +138,14 @@
 
 .advantages-section {
     width: 100%;
-    margin-top: 88px;
+    margin-top: 80px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
 .advantages-title {
-    width: 200px;
-    font-family: 'Apple SD Gothic Neo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 50px;
-    letter-spacing: -0.05em;
-    color: #000000;
-    text-align: left;
-    white-space: nowrap;
+    /* width: 250px; */
 }
 
 .advantages-title-multiline {
@@ -164,7 +155,6 @@
 .advantages-boxes {
     display: flex;
     flex-direction: column;
-    margin-left: 323px;
     gap: 20px;
 }
 
@@ -254,7 +244,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 374px;
     width: 765.83px;
 }
 
@@ -272,7 +261,6 @@
 }
 
 .limit-content {
-    margin-left: 374px;
 }
 
 .limit-image {
