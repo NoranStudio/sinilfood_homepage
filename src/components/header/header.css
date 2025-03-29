@@ -1,6 +1,9 @@
 header {
   max-width: 1920px;
   position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   z-index: 999;
   transition: background-color 0.2s ease;
@@ -24,11 +27,12 @@ header.scrolled .nav-pc a.active {
 }
 
 .header-contents {
-  margin: 0 60px;
+  width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0px 20px;
+  box-sizing: border-box;
 }
 
 .nav-mo {
@@ -51,7 +55,6 @@ header.scrolled .nav-pc a.active {
   font-weight: bold;
 }
 
-/* 모바일 미디어 쿼리 (1280px 미만) */
 @media screen and (max-width: 1279px) {
   header {
     max-width: 425px;
