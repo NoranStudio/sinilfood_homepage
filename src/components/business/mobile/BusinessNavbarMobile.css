@@ -59,15 +59,8 @@
 }
 
 /* 최소 화면 너비(360px)에서의 gap */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1280px) {
     .nav-list-mobile {
         gap: 5px;
-    }
-}
-
-/* 더 큰 화면에서의 최대 gap */
-@media screen and (min-width: 768px) {
-    .nav-list-mobile {
-        gap: 15px;
     }
 }

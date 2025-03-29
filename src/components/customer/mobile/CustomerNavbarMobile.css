@@ -58,14 +58,8 @@
     background-color: #dddddd;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1280px) {
     .nav-list-mobile {
         gap: 5px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .nav-list-mobile {
-        gap: 15px;
     }
 }

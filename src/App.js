@@ -1,7 +1,7 @@
 import React from "react";
 import AppRoutes from "./routes";
 import "./assets/styles/fonts.css";
-import "./assets/styles/app.css";
+import "./App.css";
 
 const App = () => {
   return (

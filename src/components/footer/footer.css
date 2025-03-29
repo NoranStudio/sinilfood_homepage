@@ -1,4 +1,4 @@
-.footer {
+footer {
   display: flex;
   background: #000;
   justify-content: center;
@@ -80,7 +80,11 @@
   text-align: start;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1280px) {
+  footer {
+    max-width: 425px;
+    min-width: 320px;
+  }
   .footer__logo {
     height: 40px;
   }

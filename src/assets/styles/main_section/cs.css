@@ -88,45 +88,8 @@
   display: none;
 }
 
-/* 태블릿 대응 */
-@media screen and (max-width: 1024px) {
-  .cs-section {
-    padding: 80px 30px;
-  }
-  .cs-contents {
-    max-width: 55%;
-  }
-  .cs-contents h2 {
-    font-size: 36px;
-    line-height: 1.4;
-    margin-bottom: 20px;
-  }
-  .cs-contents .cs-description {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-  }
-  .cs-button {
-    padding: 15px 30px;
-    font-size: 20px;
-    gap: 40px;
-    margin-bottom: 30px;
-  }
-  .cs-info {
-    font-size: 24px;
-    line-height: 1.4;
-  }
-  .cs-info b {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-  .cs-image {
-    width: 45%;
-  }
-}
-
 /* 모바일 대응 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .cs-section {
     flex-direction: column;
     padding: 60px 20px;

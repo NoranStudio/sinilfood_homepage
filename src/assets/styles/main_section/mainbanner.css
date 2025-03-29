@@ -26,7 +26,6 @@
   height: 100%;
   position: relative;
   display: flex;
-  background-image: var(--pc-background);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +42,7 @@
 
 /* 스크롤 다운 버튼 */
 .scroll-down-wrapper {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -123,17 +122,9 @@
   opacity: 0.7;
 }
 
-/* 태블릿 대응 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .banner-section {
-    aspect-ratio: 1024 / 700;
-  }
-}
-
-/* 모바일 대응 (768px 이하) */
-@media screen and (max-width: 768px) {
-  .banner-section {
-    aspect-ratio: 360 / 640;
+    width: 100%;
   }
 
   .banner-slide {

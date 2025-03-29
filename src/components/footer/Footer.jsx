@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer>
       <div className="footer__inner">
         <div className="footer__links">
           <img src={logo} alt="신일푸드 로고" className="footer__logo" />

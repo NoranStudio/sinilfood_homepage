@@ -127,124 +127,48 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+/* 모바일 미디어 쿼리 (768px 이하) */
+@media screen and (max-width: 1280px) {
+  /* 배너 타이틀 관련 */
+  .banner-title p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  /* 컨테이너 관련 */
   .oil-container {
     width: 90%;
     margin-bottom: 50px;
   }
-
-  .oil-list {
-    gap: 20px;
-    margin: 40px 0 40px 0;
+  
+  .genaral-container {
+    width: 90%;
   }
-
-  .oil-item p {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
+  
+  /* 섹션 타이틀 */
   .section-title {
     margin-top: 60px;
     font-size: 24px;
     line-height: 32px;
   }
-}
-
-.genaral-container {
-  width: 100%;
-  text-align: center; /* 필요 시 조절 */
-  position: relative;
-  margin: 0 auto;
-}
-
-/* 전체 배경 래퍼 */
-.logos-background {
-  position: relative;
-  width: 100%;
-  max-width: 1440px; /* 프로젝트 전체 폭에 맞춰 조정 */
-  margin: 100px auto; /* 가운데 정렬 */
-}
-
-/* 배경 이미지 */
-.logos-image {
-  width: 100%;
-  height: auto; /* 비율 유지 */
-  filter: blur(2px); /* 필요시 배경 블러 효과. 지우거나 강도 조정 가능 */
-  opacity: 0.9; /* 살짝 흐리게 */
-}
-.logos-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  /* 고정 폭, 높이 (819 × 324) */
-  width: 70%;
-  aspect-ratio: 819 / 324; /* 가로 세로 비율 유지 */
-
-  background: rgba(255, 255, 255, 0.8); /* 흰색 반투명 */
-  border-radius: 45px; /* 모서리 둥글게 */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-
-  /* 내부 텍스트가 박스 내에서 가운데 정렬되도록 */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* 수직 중앙 정렬 */
-  align-items: center; /* 수평 중앙 정렬 */
-  /* 혹은 padding을 사용해도 됨 */
-}
-
-.overlay-text {
-  font-family: "Apple SD Gothic Neo", sans-serif;
-  font-weight: 700; /* Bold */
-  font-size: 60px; /* 글자 크기 */
-  line-height: 80px; /* 줄 간격 */
-  letter-spacing: -0.05em; /* -5% 정도 */
-  margin: 0; /* 기본 여백 제거 */
-}
-
-/* 첫 줄 (빨강) */
-.overlay-text.line1 {
-  color: #c1272d;
-}
-
-/* 둘째 줄 (검정) */
-.overlay-text.line2 {
-  color: #000000;
-}
-.green-part {
-  color: green; /* 예: #2a7a2a 등 원하는 초록색 */
-}
-
-.black-part {
-  color: #000000; /* 검정 */
-}
-
-@media screen and (max-width: 1023px) {
-  .overlay-text {
-    font-size: 40px;
-    line-height: 60px;
+  
+  /* 제품 목록 */
+  .oil-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 40px 0 40px 0;
   }
-
-  .logos-overlay {
-    border-radius: 30px;
+  
+  .oil-item p {
+    font-size: 12px;
+    line-height: 16px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .banner-title p {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .genaral-container {
-    width: 90%;
-  }
-
+  
+  /* 로고 오버레이 */
   .logos-overlay {
     border-radius: 20px;
   }
-
+  
   .overlay-text {
     font-size: 20px;
     line-height: 28px;
