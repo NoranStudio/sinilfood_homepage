@@ -43,8 +43,13 @@
 .about__location__map {
   width: 100%;
   aspect-ratio: 1920 / 800;
-  background-image: url("@assets/img/about/map1.png");
   background-size: cover;
+}
+.hwaseong {
+  background-image: url("@assets/img/about/map1.png");
+}
+.gimhea {
+  background-image: url("@assets/img/about/map2.png");
 }
 
 .about__location__links {

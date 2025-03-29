@@ -25,7 +25,7 @@ const Location = () => {
           </div>
         </div>
       </div>
-      <KakaoMap position={activate} className="about__location__map" />
+      <KakaoMap position={activate} className={`about__location__map ${activate}`} />
       <div className="about__location__links">
         <a
           className="about__location__link"
