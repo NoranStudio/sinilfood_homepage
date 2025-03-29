@@ -23,15 +23,22 @@ const MainBanner = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const [isScrolled, setIsScrolled] = useState(false); // fixma #2 의견에 때라 지우든 계속 추가 하든 
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleScroll = () => {
     setIsScrolled(true);
   };
 
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 1279);
+  };
+
   useEffect(() => {
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -96,10 +103,10 @@ const MainBanner = () => {
             <SwiperSlide key={index}>
               <div
                 className="banner-slide"
-                style={window.innerWidth > 768 ? {
-                  backgroundImage: `url(${banner.pcImg})`
-                } : {
+                style={isMobile ? {
                   backgroundImage: `url(${banner.mobileImg})`
+                } : {
+                  backgroundImage: `url(${banner.pcImg})`
                 }}
               >
                 <div className="banner-content-wrapper">
