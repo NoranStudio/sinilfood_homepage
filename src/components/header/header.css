@@ -146,11 +146,5 @@ aside {
   font-size: 12px;
   cursor: pointer;
 }
-.hover {
-  transition: 0.5s;
-}
-.hover:hover {
-  transform: translateY(-10px);
-}
 
 }

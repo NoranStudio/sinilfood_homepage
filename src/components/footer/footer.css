@@ -29,7 +29,7 @@ footer {
   flex: 1;
   flex-direction: column;
   align-items: end;
-  gap: 40px;
+  gap: 30px;
 }
 
 .footer__links li {

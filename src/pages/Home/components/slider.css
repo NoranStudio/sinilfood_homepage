@@ -8,8 +8,6 @@
   position: relative;
 }
 .slider-section h3 {
-  font-size: 50px;
-  font-weight: 700;
   text-align: left;
   width: 100%;
   padding: 0 20px;
@@ -72,7 +70,7 @@
 /* 모바일 대응 */
 @media (max-width: 1279px) {
   .slider-section {
-    padding: 60px 0;
+    width: 100%;
   }
   .slider-section h3 {
     font-size: 24px;
