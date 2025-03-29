@@ -3,14 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import Partners from "./Partners"; // 파트너섹션
 
-import truckImage1 from "../../assets/img/center/truck.png";
-import truckImage2 from "../../assets/img/center/network.png";
-import truckImage3 from "../../assets/img/center/product.png";
-import truckImage4 from "../../assets/img/center/good_system.png";
-import logo from "../../assets/img/center/logo.png";
+import truckImage1 from "@assets/img/center/truck.png";
+import truckImage2 from "@assets/img/center/network.png";
+import truckImage3 from "@assets/img/center/product.png";
+import truckImage4 from "@assets/img/center/good_system.png";
+import logo from "@assets/img/center/logo.png";
 
 import "swiper/css";
-import "../../assets/styles/main_section/center.css";
+import "./center.css";
 
 function CenterContents() {
   const [activeContent, setActiveContent] = useState(0);

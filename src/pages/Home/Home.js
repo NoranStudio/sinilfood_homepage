@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
-import MainBanner from "./MainBanner.js"; // 메인배너
-import Slogan from "./Slogan.js"; // 슬로건
-import CenterContents from "./CenterContents"; // 전국센터, 파트너
-import Slider from "./Slider.js"; // 프렌차이즈
-import News from "./News.js"; // 새소식
-import CS from "./CS.js"; // 고객센터
+import MainBanner from "./components/MainBanner.js"; // 메인배너
+import Slogan from "./components/Slogan.js"; // 슬로건
+import CenterContents from "./components/CenterContents.js"; // 전국센터, 파트너
+import Slider from "./components/Slider.js"; // 프렌차이즈
+import News from "./components/News.js"; // 새소식
+import CS from "./components/CS.js"; // 고객센터
 
-import "../../assets/styles/main_section/home.css";
+import "./home.css";
 
-function App() {
+function Home() {
   return (
     <div className="home">
       <MainBanner />
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

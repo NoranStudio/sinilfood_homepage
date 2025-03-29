@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import fc_oil from "../../assets/img/fc_oil.png";
-import store_oil from "../../assets/img/store_oil.png";
-import fc_oil_next from "../../assets/img/fc_oil_next.png";
-import store_oil_next from "../../assets/img/store_oil_next.png";
-import fc_oil_description from "../../assets/img/fc_oil_description.png";
-import store_oil_description from "../../assets/img/store_oil_description.png";
-import fc_oil_title from "../../assets/img/fc_oil_title.png";
-import store_oil_title from "../../assets/img/store_oil_title.png";
-import oil_arrow from "../../assets/img/arrow.png";
+import fc_oil from "@assets/img/fc_oil.png";
+import store_oil from "@assets/img/store_oil.png";
+import fc_oil_next from "@assets/img/fc_oil_next.png";
+import store_oil_next from "@assets/img/store_oil_next.png";
+import fc_oil_description from "@assets/img/fc_oil_description.png";
+import store_oil_description from "@assets/img/store_oil_description.png";
+import fc_oil_title from "@assets/img/fc_oil_title.png";
+import store_oil_title from "@assets/img/store_oil_title.png";
+import oil_arrow from "@assets/img/arrow.png";
 
-import "../../assets/styles/main_section/oil.css";
+import "./oil.css";
 
 function OilSection() {
   const [currentSlide, setCurrentSlide] = useState(0);

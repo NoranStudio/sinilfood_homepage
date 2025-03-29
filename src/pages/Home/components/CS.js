@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import counsel_image from "../../assets/img/counsel_image.png";
+import counsel_image from "@assets/img/counsel_image.png";
 
-import "../../assets/styles/main_section/cs.css";
+import "./cs.css";
 
 const CS = () => {
   const [isMobile, setIsMobile] = useState(false);

@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import leftbutton from "../../assets/img/left_button.png";
-import rightbutton from "../../assets/img/right_button.png";
+import leftbutton from "@assets/img/left_button.png";
+import rightbutton from "@assets/img/right_button.png";
 
-import "../../assets/styles/main_section/news.css";
+import "./news.css";
 
 const News = () => {
   const [isMobile, setIsMobile] = useState(false);

@@ -1,17 +1,17 @@
 import React from "react";
-import cjFreshwayLogo from "../../assets/img/cooperate/CJ프레시웨이.png";
-import cjJeilJedangLogo from "../../assets/img/cooperate/CJ제일제당.png";
-import sajoLogo from "../../assets/img/cooperate/사조산업.png";
-import baeksulLogo from "../../assets/img/cooperate/백설.png";
-import ottogiLogo from "../../assets/img/cooperate/oddugi.png";
-import daekyungLogo from "../../assets/img/cooperate/daekyeong.png";
-import daesangLogo from "../../assets/img/cooperate/DAESANG.png";
-import lotteLogo from "../../assets/img/cooperate/LOTTE.png";
-import youngmiLogo from "../../assets/img/cooperate/영미산업(주).png";
-import hiveLogo from "../../assets/img/cooperate/hive.png";
-import bnbKoreaLogo from "../../assets/img/cooperate/bnb.png";
-import shinliFoodyellowImage from "../../assets/img/SHINLI FOOD.png"; // SHINLI FOOD 이미지
-import "../../assets/styles/main_section/partners.css";
+import cjFreshwayLogo from "@assets/img/cooperate/CJ프레시웨이.png";
+import cjJeilJedangLogo from "@assets/img/cooperate/CJ제일제당.png";
+import sajoLogo from "@assets/img/cooperate/사조산업.png";
+import baeksulLogo from "@assets/img/cooperate/백설.png";
+import ottogiLogo from "@assets/img/cooperate/oddugi.png";
+import daekyungLogo from "@assets/img/cooperate/daekyeong.png";
+import daesangLogo from "@assets/img/cooperate/DAESANG.png";
+import lotteLogo from "@assets/img/cooperate/LOTTE.png";
+import youngmiLogo from "@assets/img/cooperate/영미산업(주).png";
+import hiveLogo from "@assets/img/cooperate/hive.png";
+import bnbKoreaLogo from "@assets/img/cooperate/bnb.png";
+import shinliFoodyellowImage from "@assets/img/SHINLI FOOD.png"; // SHINLI FOOD 이미지
+import "./partners.css";
 
 const Partners = () => {
   return (

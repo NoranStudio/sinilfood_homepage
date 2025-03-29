@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import shinliFoodImage from "../../assets/img/SHINLI FOOD white.png"; // SHINLI FOOD 이미지
+import shinliFoodImage from "@assets/img/SHINLI FOOD white.png"; // SHINLI FOOD 이미지
 import bannerImg1 from "@assets/img/mainbanner1.png";
 import bannerImg2 from "@assets/img/mainbanner2.png";
 import bannerImg3 from "@assets/img/mainbanner3.png";
@@ -11,7 +11,7 @@ import bannerImg3Mo from "@assets/img/mainbanner3-mo.png";
 import scrollDown from "@assets/img/scroll-down.png";
 
 import "swiper/css";
-import "../../assets/styles/main_section/mainbanner.css";
+import "./mainbanner.css";
 
 import {
   HiOutlineArrowNarrowLeft,
