@@ -16,7 +16,7 @@
   height: auto;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .about__org__img {
     width: 90%;
   }

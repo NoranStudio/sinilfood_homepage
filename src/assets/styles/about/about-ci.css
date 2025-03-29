@@ -41,7 +41,7 @@
   opacity: 0.6;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .about__ci__img,
   .about__ci__desc {
     width: 90%;

@@ -93,7 +93,7 @@
 }
 
 /* 모바일 대응 */
-@media screen and (max-width: 1280px) {
+@media (max-width: 1279px) {
   .slogan-section {
     width: calc(100% - 40px);
     padding: 60px 0;

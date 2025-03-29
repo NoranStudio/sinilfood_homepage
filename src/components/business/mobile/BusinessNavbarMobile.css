@@ -59,7 +59,7 @@
 }
 
 /* 최소 화면 너비(360px)에서의 gap */
-@media screen and (max-width: 1280px) {
+@media (max-width: 1279px) {
     .nav-list-mobile {
         gap: 5px;
     }

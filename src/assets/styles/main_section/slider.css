@@ -72,7 +72,7 @@
 }
 
 /* 모바일 대응 */
-@media screen and (max-width: 1280px) {
+@media (max-width: 1279px) {
   .slider-section {
     padding: 60px 0;
   }

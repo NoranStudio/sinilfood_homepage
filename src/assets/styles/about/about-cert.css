@@ -72,7 +72,7 @@
   object-fit: cover;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .about__cert__detail svg {
     width: 150px;
     right: calc(100% - 75px);

@@ -84,7 +84,7 @@
   opacity: 0.8;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .about__location__title {
     flex-direction: column;
     height: auto;

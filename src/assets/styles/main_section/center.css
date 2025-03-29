@@ -100,7 +100,7 @@
 }
 
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 1279px) {
   .center-section {
     padding-top: 80px;
     padding-bottom: 40px;

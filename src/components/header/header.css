@@ -51,7 +51,8 @@ header.scrolled .nav-pc a.active {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1280px) {
+/* 모바일 미디어 쿼리 (1280px 미만) */
+@media screen and (max-width: 1279px) {
   header {
     max-width: 425px;
     min-width: 320px;
