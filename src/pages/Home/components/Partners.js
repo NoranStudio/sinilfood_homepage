@@ -10,7 +10,7 @@ import lotteLogo from "@assets/img/cooperate/LOTTE.png";
 import youngmiLogo from "@assets/img/cooperate/영미산업(주).png";
 import hiveLogo from "@assets/img/cooperate/hive.png";
 import bnbKoreaLogo from "@assets/img/cooperate/bnb.png";
-import shinliFoodyellowImage from "@assets/img/SHINLI FOOD.png"; // SHINLI FOOD 이미지
+import shinliFoodyellowImage from "@assets/img/SHINIL_FOOD.png"; // SHINIL_FOOD.png 이미지
 import "./partners.css";
 
 const Partners = () => {
@@ -19,7 +19,7 @@ const Partners = () => {
       <div className="new-partners-header-content">
         <img
           src={shinliFoodyellowImage}
-          alt="SHINLI FOOD"
+          alt="SHINIL_FOOD.png"
           className="yellow-logo"
         />
         <h2>
