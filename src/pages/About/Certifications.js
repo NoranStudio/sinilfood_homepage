@@ -12,7 +12,7 @@ import certImg3 from "@assets/img/about/cert/cert3.png";
 import "@assets/styles/about/about-cert.css";
 
 const Certifications = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
 
   if (isMobile) {
     return <CertificationsMobile />;

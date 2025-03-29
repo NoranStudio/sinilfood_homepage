@@ -1,17 +1,16 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const aboutNavItems = [
-  { name: "회사소개", path: "/about" },
-  { name: "CI", path: "/about/ci" },
-  { name: "인증 및 허가증", path: "/about/approvals" },
-  { name: "찾아오시는 길", path: "/about/path" },
-  { name: "연혁", path: "/about/history" },
-  { name: "조직도", path: "/about/organization" },
+  { name: "회사소개", path: "introduction" },
+  { name: "CI", path: "ci" },
+  { name: "인증 및 허가증", path: "approvals" },
+  { name: "찾아오시는 길", path: "path" },
+  { name: "연혁", path: "history" },
+  { name: "조직도", path: "organization" },
 ];
 
-const AboutNavbar = () => {
-  const location = useLocation();
+const AboutNavbar = ({ setActiveTab, activeTab }) => {
   const positions = useRef([]);
   const [highlight, setHighlight] = useState({
     left: 0,
@@ -20,7 +19,7 @@ const AboutNavbar = () => {
 
   useEffect(() => {
     const activeIndex = aboutNavItems.findIndex(
-      (item) => item.path === location.pathname
+      (item) => item.path === activeTab
     );
     const activeElement = positions.current[activeIndex];
     if (activeElement) {
@@ -29,7 +28,7 @@ const AboutNavbar = () => {
         right: activeElement.offsetLeft + activeElement.offsetWidth,
       });
     }
-  }, [location.pathname]);
+  }, [activeTab]);
 
   return (
     <div className="about-nav">
@@ -49,13 +48,13 @@ const AboutNavbar = () => {
       />
       <ul>
         {aboutNavItems.map((item, index) => (
-          <li ref={(r) => (positions.current[index] = r)} key={item.path}>
-            <Link
-              className={location.pathname === item.path ? "active" : ""}
-              to={item.path}
-            >
-              {item.name}
-            </Link>
+          <li
+            className={activeTab === item.path ? "active" : ""}
+            ref={(r) => (positions.current[index] = r)}
+            key={item.path}
+            onClick={() => setActiveTab(item.path)}
+          >
+            <Link>{item.name}</Link>
           </li>
         ))}
       </ul>

@@ -21,14 +21,7 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<BaseLayout />}>
         <Route index element={<Home />} />
-        <Route path="/about" element={<AboutLayout />}>
-          <Route index element={<AboutCompany />} />
-          <Route path="ci" element={<CI />} />
-          <Route path="approvals" element={<Certifications />} />
-          <Route path="path" element={<Location />} />
-          <Route path="history" element={<History />} />
-          <Route path="organization" element={<Organization />} />
-        </Route>
+        <Route path="/about" element={<AboutCompany />} />
         <Route path="/business" element={<FCProducts />} />
         <Route path="/customer-service" element={<CustomerSupport />} />
         <Route path="/products" element={<OilProducts />} />

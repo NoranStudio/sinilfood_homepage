@@ -17,28 +17,24 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
+import { useMediaQuery } from "react-responsive";
 
 const MainBanner = () => {
   const swiperRef = useRef(null);
   const [currentPage, setCurrentPage] = useState(1);
 
   const [isScrolled, setIsScrolled] = useState(false); // fixma #2 의견에 때라 지우든 계속 추가 하든 
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1279);
+  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
 
   const handleScroll = () => {
     setIsScrolled(true);
   };
 
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 1279);
-  };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
     };
   }, []);
 

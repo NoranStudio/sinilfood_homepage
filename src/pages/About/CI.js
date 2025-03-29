@@ -7,9 +7,8 @@ import "@assets/styles/about/about-ci.css";
 import { useMediaQuery } from "react-responsive";
 
 const CI = () => {
-  const isMobile = useMediaQuery({
-    query: "(max-width:768px)",
-  });
+  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
+
 
   return (
     <div className="about__ci">

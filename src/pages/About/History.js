@@ -73,7 +73,7 @@ const historyItems = [
 ];
 
 const History = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
 
   if (isMobile) {
     return <HistoryMobile historyItems={historyItems} />;
