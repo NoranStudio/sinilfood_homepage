@@ -1,0 +1,57 @@
+.about__history__graph-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 40px 0 40px 0;
+}
+
+.about__history__graph-mobile__item {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  width: 100%;
+}
+
+.about__history__graph-mobile__item__divider {
+  width: 1px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+}
+
+.about__history__graph-mobile__item__divider div {
+  width: 6px;
+  height: 6px;
+  background-color: #d9d9d9;
+  border-radius: 100%;
+  top: 33.3vw;
+  position: absolute;
+}
+
+.about__history__graph-mobile__item img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.about__history__graph-mobile__item__content h2 {
+  margin: 5px 0 5px 0;
+}
+
+.about__history__graph-mobile__item__content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.about__history__graph-mobile__item__content li {
+  display: inline-block;
+  text-align: start;
+  font-size: 14px;
+}
+
+.about__history__graph-mobile__item:not(:last-child) ul {
+  padding-bottom: 40px;
+}

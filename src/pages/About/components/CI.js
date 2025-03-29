@@ -3,7 +3,7 @@ import aboutCiImg from "@assets/img/about/about-ci.png";
 import aboutCiMobileImg1 from "@assets/img/about/about-ci-mobile1.png";
 import aboutCiMobileImg2 from "@assets/img/about/about-ci-mobile2.png";
 import { ReactComponent as DownloadIcon } from "@assets/img/download-icon.svg";
-import "@assets/styles/about/about-ci.css";
+import "./about-ci.css";
 import { useMediaQuery } from "react-responsive";
 
 const CI = () => {
