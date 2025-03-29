@@ -37,7 +37,7 @@ function Manufacturing() {
                         역시 일반유보다 향상되어 맛의 균일화가 가능합니다.
                     </p>
                 </div>
-                <div className="backline"></div>
+                {/* <div className="backline"></div>
                 <div className="advantages-section">
                     <h3 className="advantages-title advantages-title-multiline">
                         전용유
@@ -115,7 +115,7 @@ function Manufacturing() {
                     <div className="limit-content">
                         <img src={limitImg} alt="본사물류의 한계" className="limit-image" />
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -1,0 +1,51 @@
+.business-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("@assets/img/business/business_banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1920 / 500;
+  display: flex;
+}
+
+.business-banner__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px 0px 20px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.business-banner__title {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 50px;
+  color: #fff;
+}
+
+.business-banner__title span:first-child {
+  font-weight: 300;
+}
+
+.business-banner__title span:last-child {
+  font-weight: 500;
+}
+
+@media (max-width: 1279px) {
+  .business-banner {
+    height: 220px;
+    width: 100%;
+  }
+
+  .business-banner__inner {
+    width: 100%;
+    padding: 50px 20px 0px 20px;
+  }
+
+  .business-banner__title {
+    font-size: 20px;
+  }
+}

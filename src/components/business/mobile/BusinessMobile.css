@@ -342,7 +342,7 @@
 }
 
 .biodiesel-divider-mobile {
-    width: 100vw;
+    width: 100%;
     height: 3px;
     background-color: #fbfbfb;
     margin-left: calc(-50vw + 50%);

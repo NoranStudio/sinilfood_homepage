@@ -1,6 +1,5 @@
 import React, { useMemo, useState } from "react";
 import "./FCProducts.css";
-import BusinessNavbarDesktop from "../../components/business/BusinessNavbarDesktop";
 
 // 데스크톱 버전 컴포넌트
 import Manufacturing from "../../components/business/Manufacturing";
@@ -8,16 +7,12 @@ import OilTypes from "../../components/business/OilTypes";
 import RenewableEnergy from "../../components/business/RenewableEnergy";
 import Manufacturers from "../../components/business/Manufacturers";
 import Logistics from "../../components/business/Logistics";
-import businessBanner from "@assets/img/business/business_banner.png";
-import businessBannerLogistics from "@assets/img/business/business_banner_logistics.png";
+import BusinessBanner from "./BusinessBanner";
+import BusinessNavbar from "./BusinessNavbar";
 
 function FCProductsDesktop() {
   const [activeTab, setActiveTab] = useState("manufacturing");
 
-  // 배너 이미지 선택 로직
-  const bannerImage = useMemo(() => {
-    return activeTab === "logistics" ? businessBannerLogistics : businessBanner;
-  }, [activeTab]);
 
   const renderContent = useMemo(() => {
     switch (activeTab) {
@@ -38,20 +33,8 @@ function FCProductsDesktop() {
 
   return (
     <div className="business-wrapper">
-      <div
-        className="business-banner"
-        style={{ backgroundImage: `url(${bannerImage})` }}
-      >
-        <div className="business-container">
-          <div className="business-content">
-            <div className="banner-title">
-              <p className="light-text">프랜차이즈를 위한</p>
-              <p className="bold-text">맞춤형 전용유 제조 및 배송</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <BusinessNavbarDesktop
+      <BusinessBanner />
+      <BusinessNavbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
