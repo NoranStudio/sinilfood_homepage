@@ -21,10 +21,11 @@ const CS = () => {
   return (
     <div className="cs-section">
       <div className="cs-contents">
-        <h2>
+        <div className="cs-contents-left">
+        <p>
           협력사 사업문의 <br className="mo-br" />
           <b>상담센터</b>
-        </h2>
+        </p>
         <p className="cs-description">
           신일푸드는 함께 성장할 파트너사들을 기다립니다. <br />
           식용유 구매와 제조관련 상담문의를 남겨주세요.
@@ -73,6 +74,7 @@ const CS = () => {
             </svg>
           </a>
         )}
+        </div>
         <p className="cs-info">
           평일 AM 09:00 - PM 17:00 <br />
           <b>055. 334. 7789</b>
