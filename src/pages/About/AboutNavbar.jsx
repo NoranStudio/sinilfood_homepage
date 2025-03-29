@@ -11,32 +11,12 @@ const aboutNavItems = [
 ];
 
 const AboutNavbar = ({ setActiveTab, activeTab }) => {
-  const positions = useRef([]);
-  const [highlight, setHighlight] = useState({
-    left: 0,
-    right: 0,
-  });
-
-  useEffect(() => {
-    const activeIndex = aboutNavItems.findIndex(
-      (item) => item.path === activeTab
-    );
-    const activeElement = positions.current[activeIndex];
-    if (activeElement) {
-      setHighlight({
-        left: activeElement.offsetLeft,
-        right: activeElement.offsetLeft + activeElement.offsetWidth,
-      });
-    }
-  }, [activeTab]);
-
   return (
     <div className="about-nav">
       <ul>
         {aboutNavItems.map((item, index) => (
           <li
             className={activeTab === item.path ? "active" : ""}
-            ref={(r) => (positions.current[index] = r)}
             key={item.path}
             onClick={() => setActiveTab(item.path)}
           >

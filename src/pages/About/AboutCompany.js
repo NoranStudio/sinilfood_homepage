@@ -45,7 +45,7 @@ const AboutCompany = () => {
     <div className="about-company">
       <AboutBanner />
       <AboutNavbar setActiveTab={setActiveTab} activeTab={activeTab} />
-      {/* {renderContent} */}
+      {renderContent}
     </div>
   );
 };
