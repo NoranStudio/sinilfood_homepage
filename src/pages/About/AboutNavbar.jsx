@@ -32,20 +32,6 @@ const AboutNavbar = ({ setActiveTab, activeTab }) => {
 
   return (
     <div className="about-nav">
-      <div
-        className="about-nav__highlight"
-        style={{
-          left: 0,
-          width: highlight.left,
-        }}
-      />
-      <div
-        className="about-nav__highlight"
-        style={{
-          left: highlight.right,
-          width: "calc(100% - " + highlight.right + "px)",
-        }}
-      />
       <ul>
         {aboutNavItems.map((item, index) => (
           <li

@@ -1,0 +1,11 @@
+.about-company {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1279px) {
+  .about-company {
+    display: flex;
+    flex-direction: column;
+  }
+}

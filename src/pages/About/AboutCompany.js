@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 
-import "@assets/styles/about/about-company.css";
+import "./about-company.css";
 import AboutBanner from "./AboutBanner";
 import AboutNavbar from "./AboutNavbar";
 import Introduction from "./components/Introduction";
@@ -42,10 +42,10 @@ const AboutCompany = () => {
   }, [activeTab]);
   
   return (
-    <div>
+    <div className="about-company">
       <AboutBanner />
       <AboutNavbar setActiveTab={setActiveTab} activeTab={activeTab} />
-      {renderContent}
+      {/* {renderContent} */}
     </div>
   );
 };
