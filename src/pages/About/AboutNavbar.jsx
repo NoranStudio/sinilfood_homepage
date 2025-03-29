@@ -4,8 +4,8 @@ import "./about-nav.css";
 const aboutNavItems = [
   { name: "회사소개", path: "introduction" },
   { name: "CI", path: "ci" },
-  { name: "인증 및 허가증", path: "location" },
-  { name: "찾아오시는 길", path: "path" },
+  { name: "인증 및 허가증", path: "certifications" },
+  { name: "찾아오시는 길", path: "location" },
   { name: "연혁", path: "history" },
   { name: "조직도", path: "organization" },
 ];
