@@ -1,3 +1,5 @@
+import "./about-banner.css";
+
 const AboutBanner = () => (
   <div className="about-banner">
     <div className="about-banner__inner">

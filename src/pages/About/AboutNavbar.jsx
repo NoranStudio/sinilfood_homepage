@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-
+import "./about-nav.css";
 const aboutNavItems = [
   { name: "회사소개", path: "introduction" },
   { name: "CI", path: "ci" },

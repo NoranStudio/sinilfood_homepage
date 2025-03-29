@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from "react";
 
 import "@assets/styles/about/about-company.css";
-import AboutBanner from "../../components/about/AboutBanner";
-import AboutNavbar from "../../components/about/AboutNavbar";
+import AboutBanner from "./AboutBanner";
+import AboutNavbar from "./AboutNavbar";
 import Introduction from "./components/Introduction";
 import CI from "./components/CI";
 import Certifications from "./components/Certifications";
