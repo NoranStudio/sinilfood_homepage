@@ -109,15 +109,13 @@
   }
 
   .about__location__links {
-    weight: 100%;
-    aspect-ratio: 767 / 35;
-    height: 35px;
+    width: 100%;
   }
 
   .about__location__link {
-    aspect-ratio: 145 / 35;
+    width: 40%;
+    height: 30px;
     font-size: 12px;
-    margin: 10px 0 20px 0;
     padding: 10px 20px 10px 20px;
   }
 

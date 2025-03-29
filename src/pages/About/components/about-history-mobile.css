@@ -1,8 +1,10 @@
+.about__history{
+  gap: 40px !important;
+}
 .about__history__graph-mobile {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 40px 0 40px 0;
 }
 
 .about__history__graph-mobile__item {
