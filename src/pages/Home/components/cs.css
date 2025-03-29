@@ -110,6 +110,10 @@
   .cs-contents-left {
     height: 100%;
   }
+  .cs-contents-left p{
+    font-size: 26px;
+  }
+
   .cs-image-mo {
     display: block;
     width: 100%;
@@ -130,10 +134,11 @@
     gap: 20px;
   }
   .cs-info {
-    font-size: 16px;
+    font-size: 20px !important;
     text-align: center;
   }
+  
   .cs-info b {
-    font-size: 30px;
+    font-size: 36px;
   }
 }
