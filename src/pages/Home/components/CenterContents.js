@@ -93,7 +93,6 @@ function CenterContents() {
           </Swiper>
         </div>
       </div>
-      <Partners />
     </div>
   );
 }
