@@ -22,7 +22,6 @@
   display: flex;
   grid-template-columns: 5fr 4fr;
   grid-gap: 40px;
-  margin-top: 20px;
 }
 
 .about__company__detail__text {
@@ -65,7 +64,6 @@
 .about__company__banner {
   width: 100%;
   object-fit: cover;
-  margin-top: 60px;
 }
 
 .about__company__mission {
@@ -119,10 +117,6 @@
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-.about__company__card:hover {
-  transform: translateY(-5%);
-  transition: transform 0.2s;
-}
 
 .about__company__card svg {
   width: 30%;
@@ -143,6 +137,9 @@
 }
 
 @media (max-width: 1279px) {
+  .about__company{
+    gap: 60px;
+  }
   .about__company__contents {
     width: 90%;
     flex-direction: column;
@@ -196,7 +193,6 @@
     width: 100%;
     aspect-ratio: 3/1;
     object-fit: cover;
-    margin-top: 60px;
   }
 
   .about__company__mission {
@@ -209,7 +205,7 @@
 
   .about__company__cards {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
 
   .about__company__card {
