@@ -1,5 +1,5 @@
-import organizationImg from "../../assets/img/about/organization.png";
-import "../../assets/styles/about/about-organization.css";
+import organizationImg from "@assets/img/about/organization.png";
+import "@assets/styles/about/about-organization.css";
 
 const Organization = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Business.css';
-import type1 from '../../assets/img/business/type/type1.png';
-import type2 from '../../assets/img/business/type/type2.png';
-import type3 from '../../assets/img/business/type/type3.png';
-import type4 from '../../assets/img/business/type/type4.png';
+import type1 from '@assets/img/business/type/type1.png';
+import type2 from '@assets/img/business/type/type2.png';
+import type3 from '@assets/img/business/type/type3.png';
+import type4 from '@assets/img/business/type/type4.png';
 
 function OilTypes() {
     const types = [

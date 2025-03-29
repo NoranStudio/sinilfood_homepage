@@ -1,13 +1,13 @@
 import React from "react";
 
-import { ReactComponent as HACCPIcon } from "../../assets/img/about/cert/haccp.svg";
-import haccpDocImg from "../../assets/img/about/cert/haccp-doc.png";
-import facilityImg1 from "../../assets/img/about/cert/facility1.png";
-import facilityImg2 from "../../assets/img/about/cert/facility2.png";
-import certImg1 from "../../assets/img/about/cert/cert1.png";
-import certImg2 from "../../assets/img/about/cert/cert2.png";
-import certImg3 from "../../assets/img/about/cert/cert3.png";
-import "../../assets/styles/about/about-cert-mobile.css";
+import { ReactComponent as HACCPIcon } from "@assets/img/about/cert/haccp.svg";
+import haccpDocImg from "@assets/img/about/cert/haccp-doc.png";
+import facilityImg1 from "@assets/img/about/cert/facility1.png";
+import facilityImg2 from "@assets/img/about/cert/facility2.png";
+import certImg1 from "@assets/img/about/cert/cert1.png";
+import certImg2 from "@assets/img/about/cert/cert2.png";
+import certImg3 from "@assets/img/about/cert/cert3.png";
+import "@assets/styles/about/about-cert-mobile.css";
 
 const CertificationsMobile = () => {
   return (

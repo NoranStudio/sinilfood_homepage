@@ -1,6 +1,6 @@
 import React from 'react';
 import './FooterMobile.css';
-import logo from '../../assets/img/sinil_logo.png';
+import logo from '@assets/img/sinil_logo.png';
 
 function FooterMobile() {
     return (

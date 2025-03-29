@@ -1,16 +1,16 @@
 import React from 'react';
 import './Business.css';
-import sponsor1 from '../../assets/img/business/sponsor/sponsor1.png';
-import sponsor2 from '../../assets/img/business/sponsor/sponsor2.png';
-import sponsor3 from '../../assets/img/business/sponsor/sponsor3.png';
-import sponsor4 from '../../assets/img/business/sponsor/sponsor4.png';
-import sponsor5 from '../../assets/img/business/sponsor/sponsor5.png';
-import sponsor6 from '../../assets/img/business/sponsor/sponsor6.png';
-import sponsor7 from '../../assets/img/business/sponsor/sponsor7.png';
-import sponsor8 from '../../assets/img/business/sponsor/sponsor8.png';
-import sponsor9 from '../../assets/img/business/sponsor/sponsor9.png';
-import sponsor10 from '../../assets/img/business/sponsor/sponsor10.png';
-import sponsor11 from '../../assets/img/business/sponsor/sponsor11.png';
+import sponsor1 from '@assets/img/business/sponsor/sponsor1.png';
+import sponsor2 from '@assets/img/business/sponsor/sponsor2.png';
+import sponsor3 from '@assets/img/business/sponsor/sponsor3.png';
+import sponsor4 from '@assets/img/business/sponsor/sponsor4.png';
+import sponsor5 from '@assets/img/business/sponsor/sponsor5.png';
+import sponsor6 from '@assets/img/business/sponsor/sponsor6.png';
+import sponsor7 from '@assets/img/business/sponsor/sponsor7.png';
+import sponsor8 from '@assets/img/business/sponsor/sponsor8.png';
+import sponsor9 from '@assets/img/business/sponsor/sponsor9.png';
+import sponsor10 from '@assets/img/business/sponsor/sponsor10.png';
+import sponsor11 from '@assets/img/business/sponsor/sponsor11.png';
 
 function Manufacturers() {
     const sponsors = [

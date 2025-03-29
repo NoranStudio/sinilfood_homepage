@@ -1,6 +1,6 @@
 import React from 'react';
 import './Business.css';
-import map from '../../assets/img/business/map.png';
+import map from '@assets/img/business/map.png';
 
 function Logistics() {
     return (

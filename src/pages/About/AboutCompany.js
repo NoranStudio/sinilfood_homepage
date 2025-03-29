@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-import companyBuildingImg from "../../assets/img/about/company/company-building.png";
-import meetingImg from "../../assets/img/about/company/meeting.png";
-import missionImg from "../../assets/img/about/company/mission.png";
-import missionMobileImg from "../../assets/img/about/company/mission-mobile.png";
-import signImg from "../../assets/img/about/company/sign.png";
-import { ReactComponent as GreenIcon } from "../../assets/img/about/company/green.svg";
-import { ReactComponent as SocialIcon } from "../../assets/img/about/company/social.svg";
-import { ReactComponent as GroupIcon } from "../../assets/img/about/company/group.svg";
+import companyBuildingImg from "@assets/img/about/company/company-building.png";
+import meetingImg from "@assets/img/about/company/meeting.png";
+import missionImg from "@assets/img/about/company/mission.png";
+import missionMobileImg from "@assets/img/about/company/mission-mobile.png";
+import signImg from "@assets/img/about/company/sign.png";
+import { ReactComponent as GreenIcon } from "@assets/img/about/company/green.svg";
+import { ReactComponent as SocialIcon } from "@assets/img/about/company/social.svg";
+import { ReactComponent as GroupIcon } from "@assets/img/about/company/group.svg";
 
-import "../../assets/styles/about/about-company.css";
+import "@assets/styles/about/about-company.css";
 
+/**
+ * approvals
+path
+history
+organization
+ */
 const AboutCompany = () => {
+  const [activeTab, setActiveTab] = useState("ci");
+
+
   const isMobile = useMediaQuery({
     query: "(max-width:768px)",
   });

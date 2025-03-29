@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logos from '../../assets/img/oilproduct/self/logos.png'; // 실제 경로에 맞춰 수정
+import logos from '@assets/img/oilproduct/self/logos.png'; // 실제 경로에 맞춰 수정
 
 function Genaral() {
   return (

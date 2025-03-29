@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import "./FCProducts.css";
 import BusinessNavbarDesktop from "../../components/business/BusinessNavbarDesktop";
 
@@ -8,17 +8,18 @@ import OilTypes from "../../components/business/OilTypes";
 import RenewableEnergy from "../../components/business/RenewableEnergy";
 import Manufacturers from "../../components/business/Manufacturers";
 import Logistics from "../../components/business/Logistics";
-import businessBanner from "../../assets/img/business/business_banner.png";
-import businessBannerLogistics from "../../assets/img/business/business_banner_logistics.png";
+import businessBanner from "@assets/img/business/business_banner.png";
+import businessBannerLogistics from "@assets/img/business/business_banner_logistics.png";
 
 function FCProductsDesktop() {
   const [activeTab, setActiveTab] = useState("manufacturing");
 
   // 배너 이미지 선택 로직
-  const bannerImage =
-    activeTab === "logistics" ? businessBannerLogistics : businessBanner;
+  const bannerImage = useMemo(() => {
+    return activeTab === "logistics" ? businessBannerLogistics : businessBanner;
+  }, [activeTab]);
 
-  const renderContent = () => {
+  const renderContent = useMemo(() => {
     switch (activeTab) {
       case "manufacturing":
         return <Manufacturing />;
@@ -33,7 +34,7 @@ function FCProductsDesktop() {
       default:
         return <Manufacturing />;
     }
-  };
+  }, [activeTab]);
 
   return (
     <div className="business-wrapper">
@@ -54,7 +55,7 @@ function FCProductsDesktop() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
-      {renderContent()}
+      {renderContent}
     </div>
   );
 }

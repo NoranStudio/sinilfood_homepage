@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import KakaoMap from "../../components/KakaoMap";
-import { ReactComponent as ArrowRightIcon } from "../../assets/img/arrow-right.svg";
-import "../../assets/styles/about/about-location.css";
+import { ReactComponent as ArrowRightIcon } from "@assets/img/arrow-right.svg";
+import "@assets/styles/about/about-location.css";
 
 const Location = () => {
   const [activate, setActivate] = useState("hwaseong");

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Business.css';
-import oilFeature from '../../assets/img/business/oil_feature.png';
-import roleGraph from '../../assets/img/business/role_graph.png';
-import limitImg from '../../assets/img/business/limit.png';
+import oilFeature from '@assets/img/business/oil_feature.png';
+import roleGraph from '@assets/img/business/role_graph.png';
+import limitImg from '@assets/img/business/limit.png';
 
 function Manufacturing() {
     return (

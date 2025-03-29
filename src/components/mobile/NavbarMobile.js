@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../assets/img/sinil_logo.png';
-import menuButton from '../../assets/img/business/mobile/menubutton_mobile.png';
+import logo from '@assets/img/sinil_logo.png';
+import menuButton from '@assets/img/business/mobile/menubutton_mobile.png';
 import './NavbarMobile.css';
 
 function NavbarMobile() {

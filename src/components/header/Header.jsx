@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/img/sinil_logo.png";
-import navWhite from "../../assets/img/nav_white.png";
+import logo from "@assets/img/sinil_logo.png";
+import navWhite from "@assets/img/nav_white.png";
 import "./header.css";
 import { Link, useLocation } from "react-router-dom";
-import navGray from "../../assets/img/nav_gray.png";
+import navGray from "@assets/img/nav_gray.png";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);

@@ -1,26 +1,26 @@
 import React from 'react';
 import './Business.css';
-import biodieselImg from '../../assets/img/business/biodiesel.png';
-import batteryImg from '../../assets/img/business/battery.png';
-import globeImg from '../../assets/img/business/globe.png';
-import fuelImg from '../../assets/img/business/fuel.png';
-import bioDieselExplainedImg from '../../assets/img/business/bioDiesel_explained.png';
-import foodExplainedImg from '../../assets/img/business/food_explained.png';
-import recycleGraphImg from '../../assets/img/business/recycle_graph.png';
-import process1 from '../../assets/img/business/process/process_1.png';
-import process2 from '../../assets/img/business/process/process_2.png';
-import process3 from '../../assets/img/business/process/process_3.png';
-import process4 from '../../assets/img/business/process/process_4.png';
-import process5 from '../../assets/img/business/process/process_5.png';
-import process6 from '../../assets/img/business/process/process_6.png';
-import process7 from '../../assets/img/business/process/process_7.png';
-import process8 from '../../assets/img/business/process/process_8.png';
-import process9 from '../../assets/img/business/process/process_9.png';
-import storage1 from '../../assets/img/business/storage/storage_1.png';
-import storage2 from '../../assets/img/business/storage/storage_2.png';
-import storage3 from '../../assets/img/business/storage/storage_3.png';
-import storage4 from '../../assets/img/business/storage/storage_4.png';
-import playGraph from '../../assets/img/business/play_graph.png';
+import biodieselImg from '@assets/img/business/biodiesel.png';
+import batteryImg from '@assets/img/business/battery.png';
+import globeImg from '@assets/img/business/globe.png';
+import fuelImg from '@assets/img/business/fuel.png';
+import bioDieselExplainedImg from '@assets/img/business/bioDiesel_explained.png';
+import foodExplainedImg from '@assets/img/business/food_explained.png';
+import recycleGraphImg from '@assets/img/business/recycle_graph.png';
+import process1 from '@assets/img/business/process/process_1.png';
+import process2 from '@assets/img/business/process/process_2.png';
+import process3 from '@assets/img/business/process/process_3.png';
+import process4 from '@assets/img/business/process/process_4.png';
+import process5 from '@assets/img/business/process/process_5.png';
+import process6 from '@assets/img/business/process/process_6.png';
+import process7 from '@assets/img/business/process/process_7.png';
+import process8 from '@assets/img/business/process/process_8.png';
+import process9 from '@assets/img/business/process/process_9.png';
+import storage1 from '@assets/img/business/storage/storage_1.png';
+import storage2 from '@assets/img/business/storage/storage_2.png';
+import storage3 from '@assets/img/business/storage/storage_3.png';
+import storage4 from '@assets/img/business/storage/storage_4.png';
+import playGraph from '@assets/img/business/play_graph.png';
 
 function RenewableEnergy() {
     return (

@@ -6,7 +6,7 @@ import CustomerNavbarDesktop from "../../components/customer/CustomerNavbarDeskt
 import CustomerService from "../../components/customer/CustomerService";
 import News from "../../components/customer/News";
 import Board from "../../components/customer/Board";
-import customerBanner from "../../assets/img/customer/customer_banner.png";
+import customerBanner from "@assets/img/customer/customer_banner.png";
 
 function CustomerSupportDesktop() {
   const [activeTab, setActiveTab] = useState("customer-service");

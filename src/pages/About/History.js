@@ -2,14 +2,14 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import HistoryMobile from "./HistoryMobile";
 
-import history2024Img from "../../assets/img/about/history/2024.png";
-import history2023Img from "../../assets/img/about/history/2023.png";
-import history2022Img from "../../assets/img/about/history/2022.png";
-import history2019Img from "../../assets/img/about/history/2019.png";
-import history2015Img from "../../assets/img/about/history/2015.png";
-import history2013Img from "../../assets/img/about/history/2013.png";
+import history2024Img from "@assets/img/about/history/2024.png";
+import history2023Img from "@assets/img/about/history/2023.png";
+import history2022Img from "@assets/img/about/history/2022.png";
+import history2019Img from "@assets/img/about/history/2019.png";
+import history2015Img from "@assets/img/about/history/2015.png";
+import history2013Img from "@assets/img/about/history/2013.png";
 
-import "../../assets/styles/about/about-history.css";
+import "@assets/styles/about/about-history.css";
 
 const historyItems = [
   {

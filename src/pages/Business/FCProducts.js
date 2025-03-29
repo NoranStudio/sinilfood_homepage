@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import FCProductsDesktop from './FCProductsDesktop';
 import FCProductsMobile from './mobile/FCProductsMobile';
 import './FCProducts.css';
-import businessBanner from '../../assets/img/business/business_banner.png';
-import businessBannerLogistics from '../../assets/img/business/business_banner_logistics.png';
+import businessBanner from '@assets/img/business/business_banner.png';
+import businessBannerLogistics from '@assets/img/business/business_banner_logistics.png';
 
 function FCProducts() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
