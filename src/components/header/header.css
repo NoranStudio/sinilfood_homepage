@@ -8,6 +8,7 @@ header {
   width: 100%;
   z-index: 999;
   transition: background-color 0.2s ease;
+  height: 150px;
 }
 
 /* 스크롤 시 헤더 스타일 */
@@ -41,7 +42,7 @@ header.scrolled .nav-pc a.active {
   justify-content: center;
 }
 .header-logo {
-  width: 100px;
+  /* width: 100px; */
 }
 .nav-mo {
   display: none;
@@ -67,6 +68,7 @@ header.scrolled .nav-pc a.active {
   header {
     max-width: 425px;
     min-width: 320px;
+    height: 80px;
   }
   .header-contents {
     width: 100%;
@@ -76,6 +78,10 @@ header.scrolled .nav-pc a.active {
     margin: 0;
   }
   .header-contents h1 img {
+    width: 100px;
+  }
+  
+  .header-logo {
     width: 100px;
   }
   .nav-pc {
@@ -100,6 +106,10 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.header-contents{
+  height: 80px;
+
 }
 .aside-header {
   width: 100%;
