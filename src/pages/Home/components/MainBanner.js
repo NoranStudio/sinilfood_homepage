@@ -23,7 +23,7 @@ const MainBanner = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const [isScrolled, setIsScrolled] = useState(false); // fixma #2 의견에 때라 지우든 계속 추가 하든 
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1279);
 
   const handleScroll = () => {
     setIsScrolled(true);
@@ -31,7 +31,6 @@ const MainBanner = () => {
 
   const handleResize = () => {
     setIsMobile(window.innerWidth < 1279);
-    console.log(window.innerWidth);
   };
 
   useEffect(() => {

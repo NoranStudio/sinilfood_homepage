@@ -93,9 +93,8 @@
 
 /* 모바일 대응 */
 @media (max-width: 1279px) {
-  .slogan-section {
-    width: calc(100% - 40px);
-    padding: 60px 0;
+  .slogan-section {   
+    /* background-color: burlywood */
   }
   .slogan-title {
     font-size: 26px;

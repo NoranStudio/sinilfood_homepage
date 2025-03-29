@@ -15,11 +15,11 @@ function Home() {
     <div className="home">
       <MainBanner />
       <Slogan />
-      <CenterContents />
+      {/* <CenterContents />
       <Partners />
       <Slider />
       <News />
-      <CS />
+      <CS /> */}
     </div>
   );
 }
