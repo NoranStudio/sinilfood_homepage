@@ -57,7 +57,7 @@
   justify-content: space-between;
   align-items: center;
   width: 1280px;
-  gap: 20px;
+  gap: 6px;
 }
 
 .about__location__link {
@@ -89,6 +89,15 @@
 }
 
 @media (max-width: 1279px) {
+
+  .hwaseong {
+    background-image: url("@assets/img/about/mobile_map1.png");
+  }
+  .gimhea {
+    background-image: url("@assets/img/about/mobile_map2.png");
+  }
+
+
   .about__location__title {
     flex-direction: column;
     height: auto;
