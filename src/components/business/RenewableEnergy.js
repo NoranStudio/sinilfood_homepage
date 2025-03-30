@@ -1,6 +1,5 @@
 import React from "react";
 import "./Business.css";
-import biodieselImg from "@assets/img/business/biodiesel.png";
 import batteryImg from "@assets/img/business/battery.png";
 import globeImg from "@assets/img/business/globe.png";
 import fuelImg from "@assets/img/business/fuel.png";
