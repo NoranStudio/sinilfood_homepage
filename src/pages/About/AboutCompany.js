@@ -9,22 +9,15 @@ import Certifications from "./components/Certifications";
 import Location from "./components/Location";
 import History from "./components/History";
 import Organization from "./components/Organization";
+import { useLocation } from "react-router-dom";
 
-/**
- * 
- * introduction
- * ci
- * approvals
- * path
- * history
- * organization
- */
 const AboutCompany = () => {
-  const [activeTab, setActiveTab] = useState("introduction");
+  const { state } = useLocation();
+  const [activeTab, setActiveTab] = useState(state?.subMenu || "");
 
   const renderContent = useMemo(() => {
     switch (activeTab) {
-      case "introduction":
+      case "":
         return <Introduction />;
       case "ci":
         return <CI />;
@@ -37,10 +30,10 @@ const AboutCompany = () => {
       case "organization":
         return <Organization />;
       default:
-        return null;
+        return <Introduction />;
     }
   }, [activeTab]);
-  
+
   return (
     <div className="about-company">
       <AboutBanner />

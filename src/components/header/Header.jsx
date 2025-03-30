@@ -4,14 +4,14 @@ import { useMediaQuery } from "react-responsive";
 import logo from "@assets/img/sinil_logo.png";
 import navWhite from "@assets/img/nav_white.png";
 import "./header.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import navGray from "@assets/img/nav_gray.png";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
-
+  const navigate = useNavigate();
   const { pathname } = useLocation();
 
   const prefix = pathname.split("/")[1];
@@ -55,6 +55,12 @@ const Header = () => {
     };
   }, []);
 
+  const handleClickLink = (menu, subMenu = "") => () => {
+    setIsOpenMenu(false);
+    navigate(menu, { state: { subMenu } });
+  };
+
+
   return (
     <header className={isScrolled ? "scrolled" : ""}>
       <div className="header-contents">
@@ -94,46 +100,46 @@ const Header = () => {
               </div>
               <div className="aside-contents-container">
                 <div className="aside-contents">
-                  <p className="aside-contents-title">회사소개</p>
+                  <p className="aside-contents-title" onClick={handleClickLink('about')}>회사소개</p>
                   <div className="aside-menus">
-                    <p className="aside-menu">회사소개</p>
-                    <p className="aside-menu">CI</p>
-                    <p className="aside-menu">인증 및 허가증</p>
+                    <p className="aside-menu" onClick={handleClickLink('about', 'about')}>회사소개</p>
+                    <p className="aside-menu" onClick={handleClickLink('about', 'ci')}>CI</p>
+                    <p className="aside-menu" onClick={handleClickLink('about', 'cert')}>인증 및 허가증</p>
                   </div>
                   <div className="aside-menus">
-                    <p className="aside-menu">찾아오시는 길</p>
-                    <p className="aside-menu">연혁</p>
-                    <p className="aside-menu">조직도</p>
-                  </div>
-                </div>
-                <div className="aside-contents">
-                  <p className="aside-contents-title">사업영역</p>
-                  <div className="aside-menus">
-                    <p className="aside-menu">전용유 제작</p>
-                    <p className="aside-menu">식용유 종류</p>
-                    <p className="aside-menu">신재생에너지 사업</p>
-                  </div>
-                  <div className="aside-menus">
-                    <p className="aside-menu">제조사 현황</p>
-                    <p className="aside-menu">신일푸드 물류시스템</p>
+                    <p className="aside-menu" onClick={handleClickLink('about', 'location')}>찾아오시는 길</p>
+                    <p className="aside-menu" onClick={handleClickLink('about', 'history')}>연혁</p>
+                    <p className="aside-menu" onClick={handleClickLink('about', 'organization')}>조직도</p>
                   </div>
                 </div>
                 <div className="aside-contents">
-                  <p className="aside-contents-title">제품소개</p>
+                  <p className="aside-contents-title" onClick={handleClickLink('business')}>사업영역</p>
                   <div className="aside-menus">
-                    <p className="aside-menu">자사전용유 | 일반유</p>
-                    <p className="aside-menu">프랜차이즈 전용유</p>
+                    <p className="aside-menu" onClick={handleClickLink('business', 'manufacturing')}>전용유 제작</p>
+                    <p className="aside-menu" onClick={handleClickLink('business', 'types')}>식용유 종류</p>
+                    <p className="aside-menu" onClick={handleClickLink('business', 'renewable')}>신재생에너지 사업</p>
+                  </div>
+                  <div className="aside-menus">
+                    <p className="aside-menu" onClick={handleClickLink('business', 'manufacturers')}>제조사 현황</p>
+                    <p className="aside-menu" onClick={handleClickLink('business', 'logistics')}>신일푸드 물류시스템</p>
                   </div>
                 </div>
                 <div className="aside-contents">
-                  <p className="aside-contents-title">고객서비스</p>
+                  <p className="aside-contents-title" onClick={handleClickLink('products')}>제품소개</p>
                   <div className="aside-menus">
-                    <p className="aside-menu">식용유 종류</p>
-                    <p className="aside-menu">신재생에너지 사업</p>
+                    <p className="aside-menu" onClick={handleClickLink('products', 'manufacturing')}>자사전용유 | 일반유</p>
+                    <p className="aside-menu" onClick={handleClickLink('products', 'franchise')}>프랜차이즈 전용유</p>
+                  </div>
+                </div>
+                <div className="aside-contents">
+                  <p className="aside-contents-title" onClick={handleClickLink('customer-service')}>고객서비스</p>
+                  <div className="aside-menus">
+                    <p className="aside-menu" onClick={handleClickLink('customer-service', 'contact')}>식용유 종류</p>
+                    <p className="aside-menu" onClick={handleClickLink('customer-service', 'faq')}>신재생에너지 사업</p>
                   </div>
                   <div className="aside-menus">
-                    <p className="aside-menu">제조사 현황</p>
-                    <p className="aside-menu">신일푸드 물류시스템</p>
+                    <p className="aside-menu" onClick={handleClickLink('customer-service')}>제조사 현황</p>
+                    <p className="aside-menu" onClick={handleClickLink('customer-service')}>신일푸드 물류시스템</p>
                   </div>
                 </div>
               </div>

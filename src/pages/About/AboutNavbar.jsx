@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./about-nav.css";
 const aboutNavItems = [
-  { name: "회사소개", path: "introduction" },
+  { name: "회사소개", path: "" },
   { name: "CI", path: "ci" },
   { name: "인증 및 허가증", path: "certifications" },
   { name: "찾아오시는 길", path: "location" },
