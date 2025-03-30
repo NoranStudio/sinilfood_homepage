@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 20px;
+    gap: 40px;
 }
 
 .manufacturing-content-mobile {
@@ -216,18 +217,22 @@
 
 .biodiesel-section-mobile {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    height: 450px;
 }
 
 .biodiesel-image-container-mobile {
-    width: 100vw;
+    width: 100%;
     height: 450px;
     position: relative;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+    background-image: url('@assets/img/business/mobile/biodieselImg_mobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
 }
 
 .biodiesel-image-mobile {
@@ -249,62 +254,59 @@
 }
 
 .biodiesel-title-mobile {
-    width: 206px;
-    font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
     text-align: center;
     letter-spacing: -1px;
     color: #ffffff;
-    margin-top: 80px;
 }
 
 .biodiesel-description-mobile {
-    width: 297px;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: -0.6px;
     color: #ffffff;
     text-align: left;
-    margin-top: 12px;
-    white-space: pre-line;
 }
 
 .biodiesel-description-bold-mobile {
-    width: 295px;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: -0.6px;
     color: #ffffff;
-    text-align: left;
-    margin-top: 15px;
-    white-space: pre-line;
 }
 
 .biodiesel-description-bold-mobile .bold-text {
     font-weight: 700;
 }
 
+.renewable-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
 .biodiesel-boxes-mobile {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
-    padding: 0 calc((100% - 300px) / 2);
-    margin-bottom: 50px;
 }
 
 .biodiesel-box-mobile {
-    width: 300px;
+    width: 100%;
     height: 340px;
     border-radius: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 34px 20px;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* 첫 번째 박스 */
@@ -340,20 +342,16 @@
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    letter-spacing: -0.8px;
     color: #000000;
-    margin-bottom: 20px;
 }
 
 .box-sub-description-mobile {
     font-weight: 300;
     font-size: 16px;
-    width: 272px;
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.8px;
     color: #717171;
-    margin-top: auto;
 }
 
 .box-title-mobile {
@@ -367,10 +365,9 @@
 }
 
 .box-image-mobile {
-    width: 100.88px;
-    height: 132.97px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
-    margin: 20px 0;
 }
 
 .renewable-business-section-mobile {
@@ -378,11 +375,18 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 25px;
+    gap:10px
+}
+
+.renewable-process-section-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
 }
 
 .renewable-business-title-mobile {
-    width: 300px;
     height: 30px;
     font-weight: 700;
     font-size: 20px;
@@ -390,19 +394,15 @@
     text-align: center;
     letter-spacing: -1px;
     color: #000000;
-    margin: 50px auto 12px;
 }
 
 .renewable-business-description-mobile {
-    width: 295px;
-    height: 18px;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
     text-align: left;
     letter-spacing: -0.6px;
     color: #262626;
-    margin: 12px auto 0;
 }
 
 .renewable-business-description-mobile .bold-text {
@@ -413,19 +413,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    margin-top: 70px;
+    gap: 15px;
     width: 100%;
-    margin-bottom: 40px;
 }
 
 .renewable-image-container-mobile {
-    width: 299px;
-    height: 162px;
+    width: 100%;
+    height: 180px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    margin: 0 auto;
 }
 
 .renewable-detail-image-mobile {
@@ -451,7 +448,6 @@
     text-align: center;
     letter-spacing: -1px;
     color: #ffffff;
-    margin-bottom: 12px;
 }
 
 .renewable-image-description-mobile {
@@ -482,22 +478,22 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    gap:10px
 }
 
 .recycle-graph-box-mobile {
-    width: 299.61px;
-    height: 191px;
+    width: 100%;
+    height: 200px;
     border-radius: 10px;
     background: #fcfcfc;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12px;
 }
 
 .recycle-graph-image-mobile {
-    width: 284px;
+    width: 100%;
     height: 160px;
     object-fit: contain;
 }
@@ -507,21 +503,19 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 20px;
 }
 
 .recycle-boxes-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    margin-top: 20px;
+    gap: 15px;
     width: 100%;
-    padding: 0 calc((100% - 300px) / 2);
-    margin-bottom: 50px;
 }
 
 .recycle-box-mobile {
-    width: 300px;
+    width: 100%;
     height: 145px;
     background: #fcfcfc;
     border-radius: 10px;
@@ -570,16 +564,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
-    padding: 0 calc((100% - 300px) / 2);
-    margin-top: 24px;
-    margin-bottom: 50px;
 }
 
 .process-box-mobile {
-    width: 300px;
-    height: 119px;
+    width: 100%;
+    height: 120px;
     background: #7d7d7d;
     border-radius: 10px;
     mix-blend-mode: multiply;
@@ -643,11 +634,11 @@
 }
 
 .container-section-mobile {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 20px;
 }
 
 .container-title-mobile {
@@ -657,18 +648,15 @@
     text-align: center;
     letter-spacing: -1px;
     color: #000000;
-    width: 177px;
-    height: 30px;
+    width: 100%;
 }
 
 .storage-images-mobile {
     display: grid;
     grid-template-columns: repeat(2, 146.39px);
     grid-template-rows: repeat(2, 196.97px);
-    gap: 8px;
+    gap: 10px;
     justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
 }
 
 .storage-image-mobile {
@@ -682,7 +670,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 50px;
+    gap: 20px;
 }
 
 .biodiesel-info-title-mobile {
@@ -692,8 +680,7 @@
     text-align: center;
     letter-spacing: -1px;
     color: #499953;
-    width: 213px;
-    height: 30px;
+    width: 100%;
 }
 
 .biodiesel-info-description-mobile {
@@ -702,8 +689,7 @@
     line-height: 18px;
     letter-spacing: -0.6px;
     color: #262626;
-    width: 300px;
-    margin-top: 12px;
+    width: 100%;
     text-align: left;
 }
 
@@ -712,7 +698,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 76px;
+    gap: 20px;
 }
 
 .background-title-mobile {
@@ -722,12 +708,11 @@
     text-align: center;
     letter-spacing: -1px;
     color: #000000;
-    width: 194px;
-    height: 30px;
+    width: 100%;
 }
 
 .background-description-mobile {
-    width: 281px;
+    width: 100%;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -736,7 +721,6 @@
     background: #d9d9d9;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 20px;
     text-align: left;
 }
 
@@ -747,9 +731,8 @@
     text-align: left;
     letter-spacing: -0.6px;
     color: #262626;
-    width: 281px;
+    width: 100%;
     height: 18px;
-    margin-top: 12px;
 }
 
 .rfs-description-mobile {
@@ -759,16 +742,16 @@
     text-align: left;
     letter-spacing: -0.6px;
     color: #262626;
-    width: 281px;
-    margin-top: 10px;
+    width: 100%;
 }
 
 .rfs-graph-section-mobile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 281px;
+    width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .rfs-graph-title-mobile {
@@ -779,7 +762,6 @@
     color: #262626;
     width: 150px;
     height: 44px;
-    margin-top: 76px;
     text-align: left;
 }
 
@@ -804,7 +786,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 76px;
+    gap: 20px;
 }
 
 .effects-title-mobile {
@@ -814,16 +796,14 @@
     text-align: center;
     letter-spacing: -1px;
     color: #000000;
-    width: 152px;
-    height: 30px;
+    width: 100%;
 }
 
 .effects-box-mobile {
-    width: 300px;
+    width: 100%;
     background: #d9d9d9;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 20px;
 }
 
 .effects-box-title-mobile {
