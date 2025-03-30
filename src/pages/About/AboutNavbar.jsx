@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
 import "./about-nav.css";
+
 const aboutNavItems = [
   { name: "회사소개", path: "" },
   { name: "CI", path: "ci" },
@@ -20,7 +20,9 @@ const AboutNavbar = ({ setActiveTab, activeTab }) => {
             key={item.path}
             onClick={() => setActiveTab(item.path)}
           >
-            <Link>{item.name}</Link>
+            <div className="about-nav-item">
+              {item.name}
+            </div>
           </li>
         ))}
       </ul>
