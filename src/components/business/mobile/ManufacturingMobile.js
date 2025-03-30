@@ -1,26 +1,25 @@
 import React from 'react';
 import './BusinessMobile.css';
-import oilFeature from '../../../assets/img/business/oil_feature.png';
-import managementMobile from '../../../assets/img/business/mobile/business_management_mobile.png';
-import limitMobile from '../../../assets/img/business/mobile/business_limit_mobile.png';
+import oilFeature from '@assets/img/business/oil_feature.png';
+import managementMobile from '@assets/img/business/mobile/business_management_mobile.png';
+import limitMobile from '@assets/img/business/mobile/business_limit_mobile.png';
 
 function ManufacturingMobile() {
     return (
         <div className="business-content-section-mobile">
             <div className="manufacturing-content-mobile">
-                <h3 className="manufacturing-title-mobile">전용유란?</h3>
-                <p className="manufacturing-description-mobile">
-                    <span className="description-light-mobile">
-                        여러유종별로 특성과 식품 첨가물 추가를 통해 단점 개선과 기능성을
-                        <br />
-                        높인 고객의 필요에 맞게 커스터마이징된 식용유입니다
-                    </span>
-                </p>
-
+                <div className="advantages-boxes-mobile">
+                    <h3 className="manufacturing-title-mobile">전용유란?</h3>
+                    <p className="manufacturing-description-mobile">
+                        <span className="description-light-mobile">
+                            여러유종별로 특성과 식품 첨가물 추가를 통해 단점 개선과 기능성을
+                            <br />
+                            높인 고객의 필요에 맞게 커스터마이징된 식용유입니다
+                        </span>
+                    </p>
+                </div>
                 <div className="feature-section-mobile">
                     <div className="feature-image-container-mobile">
-                        <div className="feature-image-border-mobile"></div>
-                        <img src={oilFeature} alt="전용유의 특징" className="feature-image-mobile" />
                         <h3 className="feature-title-mobile">전용유의 특징</h3>
                     </div>
                     <p className="feature-description-mobile">
@@ -30,11 +29,8 @@ function ManufacturingMobile() {
                         가능합니다.
                     </p>
                 </div>
-
-                <hr className="backline-mobile" />
-
-                <h3 className="advantages-title-mobile">전용유 활용시 장점</h3>
                 <div className="advantages-boxes-mobile">
+                    <h3 className="advantages-title-mobile">전용유 활용시 장점</h3>
                     <div className="advantage-box-mobile">
                         <h4 className="advantage-box-title-mobile">지속적 관리 & 수익 안정화</h4>
                         <p className="advantage-box-description-mobile">
@@ -50,7 +46,6 @@ function ManufacturingMobile() {
                         </p>
                     </div>
                 </div>
-                <hr className="biodiesel-divider-mobile" />
 
                 <div className="advantages-section-mobile">
                     <h3 className="advantages-title-mobile">(주)신일푸드 선정시 장점</h3>
@@ -82,7 +77,6 @@ function ManufacturingMobile() {
                         </div>
                     </div>
                 </div>
-                <hr className="biodiesel-divider-mobile" />
 
                 <div className="advantages-section-mobile">
                     <h3 className="advantages-title-mobile">주체별 역할</h3>
@@ -95,13 +89,12 @@ function ManufacturingMobile() {
                         <img src={managementMobile} alt="주체별 역할 그래프" className="role-graph-mobile" />
                     </div>
                 </div>
-                <hr className="biodiesel-divider-mobile" />
 
                 <div className="advantages-section-mobile">
                     <h3 className="advantages-title-mobile" style={{ whiteSpace: 'nowrap' }}>
                         본사물류의 한계
                     </h3>
-                    <div className="limit-content-mobile">
+                    <div className="ilmit-content-mobile">
                         <img src={limitMobile} alt="본사물류의 한계" className="limit-image-mobile" />
                     </div>
                 </div>

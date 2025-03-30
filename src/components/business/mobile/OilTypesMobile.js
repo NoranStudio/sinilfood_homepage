@@ -1,9 +1,9 @@
 import React from 'react';
 import './BusinessMobile.css';
-import type1 from '../../../assets/img/business/mobile/type/type1.png';
-import type2 from '../../../assets/img/business/mobile/type/type2.png';
-import type3 from '../../../assets/img/business/mobile/type/type3.png';
-import type4 from '../../../assets/img/business/mobile/type/type4.png';
+import type1 from '@assets/img/business/mobile/type/type1.png';
+import type2 from '@assets/img/business/mobile/type/type2.png';
+import type3 from '@assets/img/business/mobile/type/type3.png';
+import type4 from '@assets/img/business/mobile/type/type4.png';
 
 function OilTypesMobile() {
     const types = [

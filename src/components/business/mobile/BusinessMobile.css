@@ -1,9 +1,9 @@
 .business-content-section-mobile {
     width: 100%;
-    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
 }
 
 .manufacturing-content-mobile {
@@ -11,30 +11,21 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 40px;
 }
 
 .manufacturing-title-mobile {
-    width: 74px;
-    height: 30px;
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    letter-spacing: -1px;
-    color: #000000;
-    margin-top: 60px;
 }
 
 .manufacturing-description-mobile {
-    width: 301px;
-    height: 36px;
     text-align: center;
-    margin-top: 29px;
 }
 
 .description-light-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -43,7 +34,6 @@
 }
 
 .description-bold-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -51,27 +41,20 @@
 }
 
 .feature-section-mobile {
-    margin-top: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .feature-image-container-mobile {
-    width: 238.76px;
-    height: 238.76px;
+    width: 250px;
+    height: 250px;
     position: relative;
-    margin-bottom: 30px;
-}
-
-.feature-image-border-mobile {
-    position: absolute;
-    width: 251px;
-    height: 251px;
-    border: 3px solid #e6e6e6;
-    border-radius: 50%;
-    top: -6px;
-    left: -6px;
+    background-image: url('@assets/img/business/oil_feature.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .feature-image-mobile {
@@ -88,7 +71,6 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
@@ -98,20 +80,9 @@
 }
 
 .feature-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 16px;
     text-align: center;
-    letter-spacing: -0.6px;
     color: #262626;
     width: 100%;
-    padding: 0 20px;
-}
-
-.advantages-section-mobile {
-    width: 100%;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,14 +90,19 @@
 }
 
 .advantages-boxes-mobile {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     width: 100%;
-    padding: 0 calc((100% - 300px) / 2);
-    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.advantages-section-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
 }
 
 .advantages-divider-mobile {
@@ -138,33 +114,33 @@
     border: none;
 }
 
+.limit-content-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
 .advantages-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: -1px;
     color: #000000;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 .advantage-box-mobile {
-    width: 301px;
     background: #fbfbfb;
     border-radius: 20px;
-    padding: 21px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .advantages-boxes-mobile .advantage-box-mobile {
     align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 .advantage-box-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -175,7 +151,6 @@
 }
 
 .advantage-box-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 16px;
@@ -199,14 +174,6 @@
     margin-bottom: 0;
 }
 
-.backline-mobile {
-    width: 100vw;
-    height: 3px;
-    background-color: #fbfbfb;
-    margin: 40px calc(-50vw + 50%);
-    border: none;
-}
-
 .backline-bottom-mobile {
     width: 100%;
     height: 8px;
@@ -219,19 +186,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 20px;
 }
 
 .role-description-mobile {
-    width: 181px;
-    height: 44px;
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 16px;
-    line-height: 22px;
     text-align: center;
-    letter-spacing: -0.8px;
-    color: #000000;
-    margin-bottom: 20px;
 }
 
 .role-text-mobile {
@@ -244,14 +205,12 @@
 }
 
 .role-graph-mobile {
-    width: 300px;
-    height: 484px;
+    width: 100%;
     object-fit: contain;
 }
 
 .limit-image-mobile {
-    width: 300px;
-    height: 421px;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -291,7 +250,6 @@
 
 .biodiesel-title-mobile {
     width: 206px;
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -303,7 +261,6 @@
 
 .biodiesel-description-mobile {
     width: 297px;
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -316,7 +273,6 @@
 
 .biodiesel-description-bold-mobile {
     width: 295px;
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -339,15 +295,6 @@
     width: 100%;
     padding: 0 calc((100% - 300px) / 2);
     margin-bottom: 50px;
-}
-
-.biodiesel-divider-mobile {
-    width: 100%;
-    height: 3px;
-    background-color: #fbfbfb;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    border: none;
 }
 
 .biodiesel-box-mobile {
@@ -389,7 +336,6 @@
 }
 
 .box-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
@@ -400,7 +346,6 @@
 }
 
 .box-sub-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 16px;
     width: 272px;
@@ -412,7 +357,6 @@
 }
 
 .box-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -440,7 +384,6 @@
 .renewable-business-title-mobile {
     width: 300px;
     height: 30px;
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -453,7 +396,6 @@
 .renewable-business-description-mobile {
     width: 295px;
     height: 18px;
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -503,7 +445,6 @@
 }
 
 .renewable-image-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -514,7 +455,6 @@
 }
 
 .renewable-image-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -593,7 +533,6 @@
 }
 
 .recycle-box-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -617,7 +556,6 @@
 }
 
 .recycle-box-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -675,7 +613,6 @@
 }
 
 .process-number-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -683,7 +620,6 @@
 }
 
 .process-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -696,7 +632,6 @@
 }
 
 .process-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -716,7 +651,6 @@
 }
 
 .container-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -752,7 +686,6 @@
 }
 
 .biodiesel-info-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -764,7 +697,6 @@
 }
 
 .biodiesel-info-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -784,7 +716,6 @@
 }
 
 .background-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -797,7 +728,6 @@
 
 .background-description-mobile {
     width: 281px;
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -811,7 +741,6 @@
 }
 
 .rfs-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -824,7 +753,6 @@
 }
 
 .rfs-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -844,7 +772,6 @@
 }
 
 .rfs-graph-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
@@ -862,7 +789,6 @@
 }
 
 .rfs-graph-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -882,7 +808,6 @@
 }
 
 .effects-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -902,7 +827,6 @@
 }
 
 .effects-box-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
@@ -913,7 +837,6 @@
 }
 
 .effects-box-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -951,37 +874,29 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 60px;
+    gap: 20px;
 }
 
 .oil-types-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
     text-align: center;
-    letter-spacing: -1px;
-    color: #000000;
-    width: 104px;
-    height: 30px;
 }
 
 .oil-type-boxes-mobile {
     display: flex;
     flex-direction: column;
-    gap: 42px;
-    margin-top: 29px;
-    margin-bottom: 60px;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
 }
 
 .oil-type-box-mobile {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
 }
 
 .oil-type-image-mobile {
-    width: 300px;
+    width: 100%;
     height: 112px;
     border-radius: 10px;
     object-fit: cover;
@@ -994,37 +909,31 @@
 
 .oil-type-header-mobile {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 14px;
-    margin-bottom: 8px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .oil-type-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: -0.8px;
     color: #000000;
 }
 
 .oil-type-subtitle-mobile {
-    font-family: 'Apple SD Gothic Neo';
+    flex:1;
     font-weight: 300;
     font-size: 16px;
-    line-height: 22px;
-    letter-spacing: -0.8px;
     color: #727171;
 }
 
 .oil-type-description-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: -0.6px;
     color: #262626;
-    width: 300px;
+    width: 100%;
     text-align: left;
 }
 
@@ -1037,7 +946,6 @@
 }
 
 .manufacturers-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -1070,7 +978,6 @@
 }
 
 .logistics-title-mobile {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -1089,7 +996,6 @@
 }
 
 .logistics-description-mobile p {
-    font-family: 'Apple SD Gothic Neo';
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
