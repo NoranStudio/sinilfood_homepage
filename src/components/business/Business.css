@@ -273,13 +273,14 @@
     align-items: center;
     width: 1280px;
     padding: 0 20px;
-    gap: 40px;
+    gap: 60px;
 }
 
 .renewable-content {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 20px;
 }
 
 .renewable-title {
@@ -531,6 +532,7 @@
 .recycle-section {
     display: flex;
     gap: 30px;
+    width: 100%;
 }
 
 .recycle-graph-box {

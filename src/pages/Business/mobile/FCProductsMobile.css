@@ -1,61 +1,65 @@
-.business-wrapper-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
+@media (max-width: 1279px) {
 
-.business-banner-mobile {
-  width: 100%;
-  height: 220px;
-  background-image: url("@assets/img/business/mobile/business_banner_mobile.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px 0px 20px;
-}
+  .business-wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 
-.logo-container-mobile {
-  width: 100px;
-  height: 35.23px;
-}
+  .business-banner-mobile {
+    width: 100%;
+    height: 220px;
+    background-image: url("@assets/img/business/mobile/business_banner_mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 0px 20px;
+  }
 
-.logo-container-mobile img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+  .logo-container-mobile {
+    width: 100px;
+    height: 35.23px;
+  }
 
-.business-content-mobile {
-  display: flex;
-  text-align: left;
-  padding: 0;
-  width: 100%;
-  flex-direction: column;
-}
+  .logo-container-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
-.business-content-mobile .light-text {
-  font-family: "Apple SD Gothic Neo";
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: -1px;
-  color: #ffffff;
-  margin: 0;
-}
+  .business-content-mobile {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+  }
 
-.business-content-mobile .bold-text {
-  font-family: "Apple SD Gothic Neo";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: -1px;
-  color: #ffffff;
-  margin: 0;
+  .business-content-mobile .light-text {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .business-content-mobile .bold-text {
+    font-family: "Apple SD Gothic Neo";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin: 0;
+  }
+
 }
