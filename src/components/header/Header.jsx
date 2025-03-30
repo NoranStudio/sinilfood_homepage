@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
+
 import logo from "@assets/img/sinil_logo.png";
 import navWhite from "@assets/img/nav_white.png";
 import "./header.css";
@@ -8,7 +10,10 @@ import navGray from "@assets/img/nav_gray.png";
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const isMobile = useMediaQuery({ query: "(max-width: 1279px)" });
+
   const { pathname } = useLocation();
+
   const prefix = pathname.split("/")[1];
   const menus = [
     { id: 1, name: "회사소개", url: "about" },
@@ -20,6 +25,11 @@ const Header = () => {
   const handleClickToggleMenu = () => {
     setIsOpenMenu(!isOpenMenu);
   };
+
+  useEffect(() => {
+    setIsOpenMenu(false);
+
+  }, [isMobile]);
 
   useEffect(() => {
     // 스크롤 이벤트 핸들러
