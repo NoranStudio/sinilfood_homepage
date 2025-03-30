@@ -281,7 +281,7 @@
     font-weight: 700;
 }
 
-.renewable-content{
+.renewable-content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -375,10 +375,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap:10px
+    gap: 10px
 }
 
-.renewable-process-section-mobile{
+.renewable-process-section-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -478,7 +478,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap:10px
+    gap: 10px
 }
 
 .recycle-graph-box-mobile {
@@ -901,7 +901,7 @@
 }
 
 .oil-type-subtitle-mobile {
-    flex:1;
+    flex: 1;
     font-weight: 300;
     font-size: 16px;
     color: #727171;
@@ -921,8 +921,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    margin-top: 60px;
+    gap: 20px;
 }
 
 .manufacturers-title-mobile {
@@ -932,20 +933,18 @@
     text-align: center;
     letter-spacing: -1px;
     color: #000000;
-    width: 124px;
-    height: 30px;
+    width: 100%;
 }
 
 .sponsors-grid-mobile {
     display: grid;
-    grid-template-columns: repeat(4, 71.17px);
-    gap: 5.26px;
-    margin-top: 34px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
 }
 
 .sponsor-image-mobile {
-    width: 71.17px;
-    height: 29.56px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -954,7 +953,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 60px;
+    gap: 20px;
 }
 
 .logistics-title-mobile {
@@ -964,12 +963,10 @@
     text-align: center;
     letter-spacing: -1px;
     color: #000000;
-    width: 99px;
-    height: 30px;
+    width: 100%
 }
 
 .logistics-description-mobile {
-    margin-top: 34px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -981,19 +978,13 @@
     line-height: 18px;
     letter-spacing: -0.6px;
     color: #262626;
-    width: 300px;
-    height: 54px;
+    width: 100%;
     text-align: left;
 }
 
-.logistics-map-mobile {
-    margin-top: 34px;
-    margin-bottom: 63px;
-}
-
 .logistics-map-mobile img {
-    width: 299px;
-    height: 456px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
