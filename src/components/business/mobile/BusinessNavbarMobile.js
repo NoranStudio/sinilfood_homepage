@@ -3,7 +3,7 @@ import './BusinessNavbarMobile.css';
 
 function BusinessNavbarMobile({ activeTab, setActiveTab }) {
     const menuItems = [
-        { id: 'manufacturing', text: '전용유 제작', width: '53px' },
+        { id: '', text: '전용유 제작', width: '53px' },
         { id: 'types', text: '식용유 종류', width: '53px' },
         { id: 'renewable', text: '신재생에너지', width: '65px' },
         { id: 'manufacturers', text: '제조사 현황', width: '53px' },

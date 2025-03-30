@@ -102,7 +102,7 @@ const Header = () => {
                 <div className="aside-contents">
                   <p className="aside-contents-title" onClick={handleClickLink('about')}>회사소개</p>
                   <div className="aside-menus">
-                    <p className="aside-menu" onClick={handleClickLink('about', 'about')}>회사소개</p>
+                    <p className="aside-menu" onClick={handleClickLink('about')}>회사소개</p>
                     <p className="aside-menu" onClick={handleClickLink('about', 'ci')}>CI</p>
                     <p className="aside-menu" onClick={handleClickLink('about', 'cert')}>인증 및 허가증</p>
                   </div>
@@ -115,7 +115,7 @@ const Header = () => {
                 <div className="aside-contents">
                   <p className="aside-contents-title" onClick={handleClickLink('business')}>사업영역</p>
                   <div className="aside-menus">
-                    <p className="aside-menu" onClick={handleClickLink('business', 'manufacturing')}>전용유 제작</p>
+                    <p className="aside-menu" onClick={handleClickLink('business')}>전용유 제작</p>
                     <p className="aside-menu" onClick={handleClickLink('business', 'types')}>식용유 종류</p>
                     <p className="aside-menu" onClick={handleClickLink('business', 'renewable')}>신재생에너지 사업</p>
                   </div>

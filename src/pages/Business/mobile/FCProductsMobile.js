@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./FCProductsMobile.css";
 import BusinessNavbarMobile from "../../../components/business/mobile/BusinessNavbarMobile";
 import ManufacturingMobile from "../../../components/business/mobile/ManufacturingMobile";
@@ -8,9 +8,14 @@ import ManufacturersMobile from "../../../components/business/mobile/Manufacture
 import LogisticsMobile from "../../../components/business/mobile/LogisticsMobile";
 import businessBannerMobile from "../../../assets/img/business/mobile/business_banner_mobile.png";
 import businessBannerLogisticsMobile from "../../../assets/img/business/mobile/business_banner_logistics_mobile.png";
+import { useLocation } from "react-router-dom";
 
 function FCProductsMobile() {
-  const [activeTab, setActiveTab] = useState("manufacturing");
+  const { state } = useLocation();
+  const [activeTab, setActiveTab] = useState(state?.subMenu || "");
+  useEffect(() => {
+    setActiveTab(state?.subMenu || "");
+  }, [state?.subMenu]);
 
   // 배너 이미지 선택 로직
   const bannerImage =
@@ -20,7 +25,7 @@ function FCProductsMobile() {
 
   const renderContent = () => {
     switch (activeTab) {
-      case "manufacturing":
+      case"":
         return <ManufacturingMobile />;
       case "types":
         return <OilTypesMobile />;
