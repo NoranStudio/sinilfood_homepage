@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { renderToString } from "react-dom/server";
-import { ReactComponent as ArrowRightIcon } from "../assets/img/arrow-right.svg";
-import "../assets/styles/map.css";
+import { ReactComponent as ArrowRightIcon } from "@assets/img/arrow-right.svg";
+import "./map.css";
 
 const info = {
   hwaseong: {
