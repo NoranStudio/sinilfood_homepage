@@ -127,7 +127,7 @@ const Header = () => {
                 <div className="aside-contents">
                   <p className="aside-contents-title" onClick={handleClickLink('products')}>제품소개</p>
                   <div className="aside-menus">
-                    <p className="aside-menu" onClick={handleClickLink('products', 'manufacturing')}>자사전용유 | 일반유</p>
+                    <p className="aside-menu" onClick={handleClickLink('products', '')}>자사전용유 | 일반유</p>
                     <p className="aside-menu" onClick={handleClickLink('products', 'franchise')}>프랜차이즈 전용유</p>
                   </div>
                 </div>
