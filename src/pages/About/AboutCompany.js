@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 import "./about-company.css";
 import AboutBanner from "./AboutBanner";
@@ -14,6 +14,10 @@ import { useLocation } from "react-router-dom";
 const AboutCompany = () => {
   const { state } = useLocation();
   const [activeTab, setActiveTab] = useState(state?.subMenu || "");
+
+  useEffect(() => {
+    setActiveTab(state?.subMenu || "");
+  }, [state?.subMenu]);
 
   const renderContent = useMemo(() => {
     switch (activeTab) {
