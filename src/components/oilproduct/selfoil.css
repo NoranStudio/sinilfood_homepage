@@ -27,7 +27,7 @@
 .oil-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 60px;
   width: 100%;
 }
@@ -101,7 +101,7 @@
   }
 
   .oil-item {
-    width: 130px;
+    width: 100px;
     gap: 8px;
   }
 
