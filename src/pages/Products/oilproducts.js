@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // 자사 전용유 / 일반유 섹션 컴포넌트 임포트
 import SelfOil from "../../components/oilproduct/selfoil";
 import GeneralOil from "../../components/oilproduct/generaloil";
-import OilproductNavbarDesktop from "../../components/oilproduct/OilproductNavbarDesktop";
+import OilproductNavbar from "../../components/oilproduct/OilproductNavbar";
 import OilproductBanner from "../../components/oilproduct/OilproductBanner";
 import "./op.css"; // 페이지 전용 스타일
 
@@ -24,7 +24,7 @@ function OilProducts() {
   return (
     <div className="oilproduct-wrapper">
       <OilproductBanner />
-      <OilproductNavbarDesktop
+      <OilproductNavbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
