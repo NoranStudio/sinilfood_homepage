@@ -2,7 +2,7 @@ import React from "react";
 import "./OilproductNavbar.css";
 
 const oilproductNavItems = [
-  { name: "자사 전용유 | 일반유", path: "selfoil" },
+  { name: "자사 전용유 | 일반유", path: "" },
   { name: "프랜차이즈 전용유", path: "franchise" },
 ];
 

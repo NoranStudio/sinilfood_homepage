@@ -1,0 +1,199 @@
+.franchise-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 60px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.franchise-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 30px;
+  width: 100%;
+}
+
+.franchise-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.franchise-item:hover {
+  transform: translateY(-5px);
+}
+
+.franchise-item img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.franchise-item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.franchise-description {
+  text-align: center;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* 로고 배경 스타일 */
+.logos-background {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logos-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logos-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.overlay-text {
+  text-align: center;
+  margin: 0;
+}
+
+.line1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+
+.line2 {
+  font-size: 24px;
+}
+
+.green-part {
+  color: #499953;
+  font-weight: 600;
+}
+
+.black-part {
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 1279px) {
+  .franchise-container {
+    padding: 0 15px;
+    gap: 40px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+
+  .franchise-list {
+    gap: 30px 20px;
+  }
+
+  .franchise-item {
+    width: 160px;
+    gap: 10px;
+  }
+
+  .franchise-item p {
+    font-size: 14px;
+  }
+  
+  .franchise-description {
+    font-size: 14px;
+  }
+  
+  .logos-overlay {
+    gap: 8px;
+  }
+  
+  .line1 {
+    font-size: 24px;
+  }
+  
+  .line2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .franchise-container {
+    padding: 0 10px;
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+
+  .franchise-list {
+    gap: 25px 15px;
+  }
+
+  .franchise-item {
+    width: 130px;
+    gap: 8px;
+  }
+
+  .franchise-item p {
+    font-size: 12px;
+  }
+  
+  .franchise-description {
+    font-size: 12px;
+  }
+  
+  .logos-overlay {
+    gap: 5px;
+  }
+  
+  .line1 {
+    font-size: 18px;
+  }
+  
+  .line2 {
+    font-size: 14px;
+  }
+} 

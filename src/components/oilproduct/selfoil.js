@@ -1,4 +1,5 @@
 import React from 'react';
+import './selfoil.css';
 
 // 자사 전용유 이미지 import
 import self1 from '@assets/img/oilproduct/self/1.png';
@@ -58,7 +59,7 @@ function SelfOil() {
     { name: '해표 대두유 식용유', image: gen11 },
     { name: '올바른 콩식용유', image: gen12 },
     { name: '쉐프원 콩식용유', image: gen13 },
-    { name: '오’셀프 식용유', image: gen14 },
+    { name: "오'셀프 식용유", image: gen14 },
     { name: '오뚜기 식용유', image: gen15 },
     { name: '딱 한번만 옥수수유', image: gen16 },
     { name: '안심해요 식용유', image: gen17 },
