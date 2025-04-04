@@ -22,6 +22,9 @@
   justify-content: center;
   align-items: center;
   height: 50px;
+  width: 100%;
+  max-width: 425px;
+  text-align: center;
 }
 
 .about__location__tab div {
@@ -29,6 +32,8 @@
   border: 1px solid #499953;
   color: #499953;
   cursor: pointer;
+  width: 200px;
+  flex: 1;
 }
 
 .about__location__tab span {
@@ -61,23 +66,26 @@
 }
 
 .about__location__link {
-  width: 600px;
-  height: 100px;
+  width: 500px;
+  height: 80px;
   border-radius: 50px;
   background-color: #000;
-  padding: 10px 50px 10px 100px;
+  padding: 10px 50px 10px 130px;
   text-decoration: none;
   color: #fff;
-  font-size: 28px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: content-box;
+  font-weight: 700;
 }
 
 .about__location__link span {
+  padding-top: 5px;
   margin-left: 20px;
   margin-right: auto;
+  font-weight: 300;
 }
 
 .about__location__link svg {
@@ -105,7 +113,10 @@
   }
 
   .about__location__tab {
-    width: 100%;
+    font-size: 11px;
+    width: 113%;
+    margin-bottom: -26px;
+
   }
 
   .about__location__tab div {
@@ -118,17 +129,18 @@
   }
 
   .about__location__links {
-    width: 100%;
+    width: 90%;
   }
 
   .about__location__link {
     width: 40%;
     height: 30px;
-    font-size: 12px;
-    padding: 10px 20px 10px 20px;
+    font-size: 9px;
+    padding: 5px 20px 5px 30px;
   }
 
   .about__location__link span {
+    padding-top: 3px;
     margin-left: 5px;
   }
 }
