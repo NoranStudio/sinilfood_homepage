@@ -6,6 +6,8 @@
   width: 100%;
   height: 50px;
   margin-bottom: 100px;
+  border-bottom: 1px solid #e0e0e0; /* 얇은 회색 실선 */
+  padding-top: 5px;
 }
 
 .about-nav ul {
@@ -26,7 +28,7 @@
 
 .about-nav .active {
   font-weight: 500;
-  border-bottom: 2px solid #499953;
+  border-bottom: 3px solid #499953;
   box-sizing: content-box;
 }
 
@@ -41,11 +43,19 @@
   display: flex;
   align-items: center;
 }
+.about-nav li.active .about-nav-item {
+  font-weight: 800; /* 원하는 굵기 */
+}
 
 @media (max-width: 1279px) {
   .about-nav {
     width: 100%;
     margin-bottom: 60px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: flex-end; /* 탭이 아래쪽에 붙도록 */
+    padding-left: 14px;
+    margin-top: -14px;
   }
 
   .about-nav ul {

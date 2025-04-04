@@ -6,6 +6,8 @@
     width: 100%;
     height: 50px;
     margin-bottom: 100px;
+    border-bottom: 1px solid #e0e0e0; /* 얇은 회색 실선 */
+    padding-top: 5px;
 }
 
 .business-navbar ul {
@@ -26,15 +28,18 @@
 
 .business-navbar .active {
     font-weight: 500;
-    border-bottom: 2px solid #499953;
+    border-bottom: 3px solid #499953;
     box-sizing: content-box;
 }
 
 .business-navbar .active {
     font-weight: 500;
-    border-bottom: 2px solid #499953;
+    border-bottom: 3px solid #499953;
     box-sizing: border-box;
 }
+.business-navbar li.active .business-nav-item {
+    font-weight: 700; /* 원하는 굵기로 설정 */
+  }
 
 .business-nav-item {
     font-size: 18px;
@@ -48,12 +53,15 @@
     align-items: center;
 }
 
-
-
 @media (max-width: 1279px) {
     .business-navbar {
         width: 100%;
         margin-bottom: 60px;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        align-items: flex-end; /* 탭이 아래쪽에 붙도록 */
+        padding-left: 14px;
+        margin-top: -14px;
     }
 
     .business-navbar ul {
