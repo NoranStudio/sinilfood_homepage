@@ -132,7 +132,7 @@ npm start
         └── Products // 제품 소개 페이지
 
 ---
-
+```
 - src/assets/fonts : 폰트 파일 모음
 
 - src/assets/img : 이미지 파일(폴더별로 섹션 구분)
