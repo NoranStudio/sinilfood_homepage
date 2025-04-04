@@ -148,6 +148,7 @@
     padding-left: 0;
     max-width: 100%;
     gap: 12px;
+    margin-top: -120px;
   }
 
   .banner-texts img {
@@ -156,23 +157,26 @@
   }
 
   .banner-title {
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: -0.03em;
     line-height: 1.2;
   }
 
   .banner-description {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.4;
     letter-spacing: -0.03em;
+    margin-top: -60px;
   }
-
   .banner-navigation {
+    position: absolute;
+    bottom: 20px;       
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 16px;
-    margin-top: 20px;
     gap: 8px;
+    margin-top: 0;      
   }
-
   .banner-navigation svg {
     width: 20px;
   }
