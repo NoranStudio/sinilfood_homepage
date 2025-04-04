@@ -78,7 +78,7 @@ npm start
 페이지 이동 시 스크롤이 상단으로 자동 이동되도록 `App.js` 내에서 `ScrollToTop` 컴포넌트를 사용
 
 ## 페이지 구조
-
+```
 프로젝트
 ├── .gitignore
 ├── config-overrides.js //웹팩 설정
@@ -144,7 +144,7 @@ npm start
 ---
 
 ## 각 페이지 별 구조
-
+```
 Home
 ├── Home.js                  // 홈 페이지의 메인 엔트리 컴포넌트
 └── components
@@ -157,7 +157,7 @@ Home
     ├── Slider.js            // 프랜차이즈 로고 슬라이더 섹션
     └── Slogan.js            // 슬로건(타이틀 문구) 섹션
 
-
+```
 - Home.js
 
 - CenterContents.js / center.css
@@ -205,7 +205,7 @@ Swiper로 여러 로고를 자동 재생(Autoplay)으로 스크롤하거나, 사
 
 ---
 ### 회사소개 페이지
-
+```
 About
 ├── AboutCompany.js          // About 페이지의 메인 엔트리 컴포넌트
 ├── AboutBanner.jsx          // 상단 배너 컴포넌트
@@ -228,7 +228,7 @@ About
     ├── about-location.css   // Location 스타일
     ├── about-organization.css // Organization 스타일
     └── about-nav.css        // AboutNavbar 스타일
-
+```
 
 - AboutCompany.js
 
@@ -272,7 +272,7 @@ About 페이지 내 탭/메뉴 역할 수행
 회사 조직도를 시각화해 부서별 역할과 인원 구성을 도식화
 
 ### business페이지 - /src/components/business 폴더에 존재
-
+```
 business
 ├── mobile
 │   ├── BusinessMobile.css
@@ -287,41 +287,41 @@ business
 ├── Manufacturers.js
 ├── OilTypes.js
 └── RenewableEnergy.js
-
-mobile/BusinessMobile.css
+```
+- mobile/BusinessMobile.css
 비즈니스(사업소개) 페이지(모바일 전용)의 전체 스타일 시트
 
-mobile/LogisticsMobile.js
+- mobile/LogisticsMobile.js
 전국 직영센터에 관한 정보 섹션의 모바일 전용 컴포넌트
 
-mobile/ManufacturersMobile.js
+- mobile/ManufacturersMobile.js
 제조사/협력사 관련 정보(로고)를 모바일로 표시하는 컴포넌트
 
-mobile/ManufacturingMobile.js
+- mobile/ManufacturingMobile.js
 전용유 제작에 관한 프로세스를 설명하는 모바일 전용 컴포넌트
 
-mobile/OilTypesMobile.js
+- mobile/OilTypesMobile.js
 식용유 종류, 대두유 카놀라유 등을 모바일 UI로 소개하는 컴포넌트
 
-mobile/RenewableEnergyMobile.js
+- mobile/RenewableEnergyMobile.js
 신재생 에너지 esg 경영에 대한 회사 사업 소개 섹션을 모바일에 최적화해 보여주는 컴포넌트
 
-Business.css
+- Business.css
 비즈니스(사업소개) 페이지 데스크톱 스타일 시트
 
-BusinessNavbar.js
+- BusinessNavbar.js
 물류, 제조사, 식용유 종류, 신재생 에너지 등 비즈니스 관련 섹션 간 네비게이션을 담당
 
-Logistics.js
+- Logistics.js
 전국 직영센터에 관한 정보 섹션의 데스크톱 전용 컴포넌트
 
-Manufacturers.js
+- Manufacturers.js
 전용유 제작에 관한 프로세스를 설명하는 데스크톱 컴포넌트
 
-OilTypes.js
+- OilTypes.js
 식용유 종류, 대두유 카놀라유 등을 데스크톱 UI로 보여주는 컴포넌트
 
-RenewableEnergy.js
+- RenewableEnergy.js
 신재생 에너지 esg 경영에 대한 회사 사업 소개 섹션
 
 
