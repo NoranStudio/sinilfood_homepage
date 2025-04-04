@@ -4,8 +4,8 @@ const BusinessBanner = () => (
   <div className="business-banner">
     <div className="business-banner__inner">
       <p className="business-banner__title">
-        <span>대한민국 외식산업을 이끄는</span>
-        <span>식용유 유통 및 푸드서비스</span>
+        <span>프랜차이즈를 위한</span>
+        <span>맞춤형 전용유 제조 및 배송</span>
       </p>
     </div>
   </div>
