@@ -10,6 +10,7 @@
 .about__cert-mobile__detail h1 {
   text-align: center;
   font-size: 28px;
+  padding-bottom: 20px;
 }
 
 .about__cert-mobile__detail div {
@@ -17,6 +18,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
+}
+
+.about__cert-mobile__detail p {
   padding-bottom: 50px;
 }
 

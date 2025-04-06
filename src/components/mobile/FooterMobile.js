@@ -1,6 +1,6 @@
-import React from 'react';
-import './FooterMobile.css';
-import logo from '@assets/img/sinil_logo.png';
+import React from "react";
+import "./FooterMobile.css";
+import logo from "@assets/img/sinil_logo.png";
 
 function FooterMobile() {
     return (
@@ -27,9 +27,11 @@ function FooterMobile() {
                         <li>
                             <a href="#products">제품소개</a>
                         </li>
+                        {/* 실서비스로 고객서비스 주석처리
                         <li>
                             <a href="#services">고객서비스</a>
                         </li>
+                        */}
                     </ul>
                 </div>
             </div>

@@ -1,150 +1,149 @@
 header {
-  max-width: 1920px;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  z-index: 999;
-  transition: background-color 0.2s ease;
-  height: 150px;
+    max-width: 1920px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.2s ease;
+    height: 150px;
 }
 
 /* 스크롤 시 헤더 스타일 */
 header.scrolled {
-  background-color: black;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 스크롤된 헤더의 메뉴 텍스트 색상 */
 header.scrolled .nav-pc a {
-  color: white;
+    color: white;
 }
 
 /* 스크롤된 헤더의 활성 메뉴 스타일 */
 header.scrolled .nav-pc a.active {
-  color: #f8f8f8;
-  font-weight: bold;
+    color: #f8f8f8;
+    font-weight: bold;
 }
 
 .header-contents {
-  width: 1280px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
 }
 
 .header-contents a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-logo {
-  /* width: 100px; */
+    /* width: 100px; */
 }
 .nav-mo {
-  display: none;
+    display: none;
 }
 
 .nav-pc {
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 .nav-pc a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 22px;
 }
 
 .nav-pc a.active {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1279px) {
-  header {
-    max-width: 425px;
-    min-width: 320px;
-    height: 80px;
-  }
-  .header-contents {
-    width: 100%;
-    padding: 20px;
-  }
-  .header-contents h1 {
-    margin: 0;
-  }
-  .header-contents h1 img {
-    width: 100px;
-  }
-  
-  .header-logo {
-    width: 100px;
-  }
-  .nav-pc {
-    display: none;
-  }
-  .nav-mo {
-    display: block;
-    cursor: pointer;
-    width: 20px;
-  }
-  
-/* 신작업 2024.02.24 */
-aside {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  z-index: 999;
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.header-contents{
-  height: 80px;
+    header {
+        max-width: 425px;
+        min-width: 320px;
+        height: 80px;
+    }
+    .header-contents {
+        width: 100%;
+        padding: 20px;
+    }
+    .header-contents h1 {
+        margin: 0;
+    }
+    .header-contents h1 img {
+        width: 100px;
+    }
 
-}
-.aside-header {
-  width: 100%;
-  max-width: 425px;
-  min-width: 320px;
-}
-.aside-contents-container {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  color: #fff;
-  text-align: right;
-  padding: 0 30px;
-}
-.aside-contents-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-}
-.aside-contents {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 10px;
-}
-.aside-menus {
-  display: flex;
-  gap: 14px;
-}
-.aside-menu {
-  width: fit-content;
-  font-weight: 300;
-  font-size: 12px;
-  cursor: pointer;
-}
+    .header-logo {
+        width: 100px;
+    }
+    .nav-pc {
+        display: none;
+    }
+    .nav-mo {
+        display: block;
+        cursor: pointer;
+        width: 20px;
+    }
 
+    /* 신작업 2024.02.24 */
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        z-index: 999;
+        min-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-contents {
+        height: 80px;
+    }
+    .aside-header {
+        width: 100%;
+        max-width: 425px;
+        min-width: 320px;
+    }
+    .aside-contents-container {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+        text-align: right;
+        padding: 0 30px;
+    }
+    .aside-contents-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .aside-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .aside-menus {
+        display: flex;
+        gap: 14px;
+    }
+    .aside-menu {
+        width: fit-content;
+        font-weight: 300;
+        font-size: 12px;
+        cursor: pointer;
+    }
 }

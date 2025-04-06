@@ -11,7 +11,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 1280px;
-  gap:30px
+  gap: 30px;
 }
 
 .about__company__contents img {
@@ -25,7 +25,7 @@
 }
 
 .about__company__detail__text {
-  flex:2;
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,13 +37,14 @@
 }
 
 .about__company__sign {
-  flex:1;
+  flex: 1;
   font-size: 20px;
   position: relative;
   display: flex;
   margin-top: auto;
   width: fit-content;
   padding-right: 100px;
+  margin-right: 35px;
   justify-content: end;
 }
 
@@ -59,6 +60,8 @@
   right: 0;
   top: -10px;
   object-fit: contain;
+  margin-right: -33px;
+  float: "right";
 }
 
 .about__company__banner {
@@ -87,6 +90,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  line-height: 0.8;
 }
 
 .about__company__esg-title p:first-child {
@@ -117,7 +121,6 @@
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-
 .about__company__card svg {
   width: 30%;
   height: 30%;
@@ -137,7 +140,7 @@
 }
 
 @media (max-width: 1279px) {
-  .about__company{
+  .about__company {
     gap: 60px;
   }
   .about__company__contents {

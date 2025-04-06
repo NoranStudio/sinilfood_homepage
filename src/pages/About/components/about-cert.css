@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 40px;
 }
 
 .about__cert__contents {
@@ -13,16 +12,27 @@
   align-items: start;
   width: 100%;
   max-width: 1280px;
-  padding: 0 20px;
+  padding: 0 0px;
+}
+.about__cert__contents h1 {
+  margin-bottom: 30px;
+}
+.about__cert__contents img {
+  gap: 0;
 }
 
 .about__cert__detail {
   display: grid;
   grid-template-columns: 8fr 5fr;
-  grid-gap: 40px;
+  grid-gap: 50px;
   width: 100%;
   max-width: 1280px;
-  padding: 0 20px;
+  padding: 0 20px 100px 0px;
+  line-height: 1.5;
+}
+
+.about__cert__detail h1 {
+  margin-bottom: 30px;
 }
 
 .about__cert__detail div {
@@ -53,11 +63,11 @@
 
 .about__cert__docs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: start;
   width: 100%;
   max-width: 1280px;
-  padding: 0 20px;
+  padding: 100px 20px;
 }
 
 .about__cert__doc p {

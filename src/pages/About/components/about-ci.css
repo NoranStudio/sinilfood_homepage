@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 30px;
 }
 
 .about__ci__img {
