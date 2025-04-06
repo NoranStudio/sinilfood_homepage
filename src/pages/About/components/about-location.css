@@ -49,6 +49,7 @@
   width: 100%;
   aspect-ratio: 1920 / 800;
   background-size: cover;
+  position: relative;
 }
 .hwaseong {
   background-image: url("@assets/img/about/map1.png");
@@ -126,6 +127,8 @@
 
   .about__location__map {
     aspect-ratio: 360 / 500;
+    /* display: flex; */
+
   }
 
   .about__location__links {

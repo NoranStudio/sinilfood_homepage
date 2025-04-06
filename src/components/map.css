@@ -1,4 +1,90 @@
-.info-overlay {
+/* SimpleOverlay 스타일 */
+.simple-overlay {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.simple-overlay__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  padding: 15px 15px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.simple-overlay__address {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  padding: 10px 15px 5px;
+}
+
+.simple-overlay__contact {
+  display: flex;
+  padding: 0 15px 15px;
+  gap: 15px;
+}
+
+.simple-overlay__contact span {
+  font-size: 13px;
+  color: #666;
+}
+
+.simple-overlay__contact span:first-child {
+  position: relative;
+}
+
+.simple-overlay__contact span:first-child::after {
+  content: '';
+  position: absolute;
+  right: -7.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #e0e0e0;
+}
+
+.simple-overlay__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eab54d;
+  color: #fff;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.simple-overlay__link svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+@media (max-width: 1279px) {
+  .simple-overlay {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 50px auto;
+  }
+}
+
+
+/* .info-overlay {
   transform: translateX(100%);
   display: flex;
   flex-direction: column;
@@ -49,11 +135,13 @@
 .info-overlay__link:hover {
   padding-left: 30px;
   padding-right: 10px;
-}
-
-@media (max-width: 1279px) {
-  .info-overlay {
-    transform: translateX(0);
-    transform: translateY(75%);
   }
-}
+  @media (max-width: 1279px) {
+    .info-overlay {
+      transform: translateX(0);
+      transform: translateY(75%);
+    }
+  }
+
+  
+  */
