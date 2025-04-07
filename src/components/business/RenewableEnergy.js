@@ -156,55 +156,55 @@ function RenewableEnergy() {
               {
                 img: process1,
                 num: "01",
-                title: "폐식용유 수거",
+                title: ["폐식용유 수거"],
                 desc: "학교, 대형음식점, 치킨가게 및 대형 아파트 단지",
               },
               {
                 img: process2,
                 num: "02",
-                title: "폐식용유 중.좌상",
+                title: ["폐식용유 중.좌상"],
                 desc: "(수거된 폐식용유 중간 처리상)의 창고로 이송 보관",
               },
               {
                 img: process3,
                 num: "03",
-                title: "수거된 폐식용유 분리",
+                title: ["수거된 폐식용유 분리"],
                 desc: "2019년 폐식용유 사용량 161,000톤으로 약 1천만개 이상의 폐식용유 깡통을 종사자가 수작업으로 처리",
               },
               {
                 img: process4,
                 num: "04",
-                title: "폐식용유 분리",
+                title: ["폐식용유 분리"],
                 desc: "폐유 및 깡통으로 분리 후 마지막 한 방울도 활용하기 위해 폐식용유 깡통을 쌓아 유분이 바닥에 떨어지게 함",
               },
               {
                 img: process5,
                 num: "05",
-                title: "폐식용유 정제공장에서 불순물 제거",
+                title: ["폐식용유", "정제공장에서 불순물 제거"],
                 desc: "여과지를 이용하여 이물질, 슬러지 등 제거",
               },
               {
                 img: process6,
                 num: "06",
-                title: "폐식용유 정제공장에서 수분 침전",
+                title: ["폐식용유", "정제공장에서 수분 침전"],
                 desc: "최종 제품의 순도 향상을 위한 정제 작업",
               },
               {
                 img: process7,
                 num: "07",
-                title: "이송",
+                title: ["이송"],
                 desc: "정제된 폐식용유를 바이오디젤 공장으로 이송",
               },
               {
                 img: process8,
                 num: "08",
-                title: "바이오디젤 제조",
+                title: ["바이오디젤 제조"],
                 desc: "공장 전경",
               },
               {
                 img: process9,
                 num: "09",
-                title: "바이오 디젤 생산",
+                title: ["바이오 디젤 생산"],
                 desc: "원료(폐식용유) + 첨가제(메탄올) + 흑미 (SM) > 바이오 디젤[86-88%], 부산물로 글리세린 (10-15%) 및 피치 생신",
               },
             ].map((box, index) => (
@@ -215,7 +215,9 @@ function RenewableEnergy() {
                     <span className="process-number">{box.num}</span>
                   </div>
                   <div className="process-text-content">
-                    <h4 className="process-title">{box.title}</h4>
+                    {box.title.length === 1 && <h4 className="process-title"> </h4>}
+                    <h4 className="process-title">{box.title[0]}</h4>
+                    {box.title.length > 1 && <h4 className="process-title">{box.title[1]}</h4>}
                     <p className="process-description">{box.desc}</p>
                   </div>
                 </div>

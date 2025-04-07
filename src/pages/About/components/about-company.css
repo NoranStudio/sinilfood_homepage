@@ -45,12 +45,17 @@
   width: fit-content;
   padding-right: 100px;
   margin-right: 35px;
+  margin-bottom: 20px;
+  height: 50px;
   justify-content: end;
 }
-
+.about__company__sign p:nth-child(1) {
+  padding-top: 25px;
+}
 .about__company__sign p:nth-child(2) {
   margin-left: 20px;
   font-weight: 700;
+  padding-top: 25px;
   letter-spacing: 5px;
 }
 
