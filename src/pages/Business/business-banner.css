@@ -12,7 +12,7 @@
 .business-banner__inner {
   display: flex;
   flex-direction: column;
-  padding: 60px 20px 0px 20px;
+  padding: 160px 20px 0px 20px;
   width: 100%;
   max-width: 1280px;
 }
@@ -42,7 +42,7 @@
 
   .business-banner__inner {
     width: 100%;
-    padding: 50px 20px 0px 20px;
+    padding: 110px 20px 0px 20px;
   }
 
   .business-banner__title {

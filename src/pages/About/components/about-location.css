@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 17px;
   width: 100%;
   max-width: 1280px;
   height: 100px;
@@ -98,14 +99,12 @@
 }
 
 @media (max-width: 1279px) {
-
   .hwaseong {
     background-image: url("@assets/img/about/mobile_map1.png");
   }
   .gimhea {
     background-image: url("@assets/img/about/mobile_map2.png");
   }
-
 
   .about__location__title {
     flex-direction: column;
@@ -117,7 +116,6 @@
     font-size: 11px;
     width: 113%;
     margin-bottom: -26px;
-
   }
 
   .about__location__tab div {
@@ -128,7 +126,6 @@
   .about__location__map {
     aspect-ratio: 360 / 500;
     /* display: flex; */
-
   }
 
   .about__location__links {

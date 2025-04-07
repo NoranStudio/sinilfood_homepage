@@ -6,7 +6,7 @@ import "./map.css";
 const info = {
   hwaseong: {
     center: { lat: 37.206002, lng: 126.985663 },
-    title: "(주)신일푸드 | 화성 지점",
+    title: "(주)신일푸드 화성지점",
     address: "경기도 화성시 매송면 매봉로123번길 23",
     phone: "055-334-7789",
     fax: "0303-3444-8883",
@@ -54,11 +54,7 @@ const SimpleOverlay = ({ title, address, phone, fax, link }) => (
       <span>T. {phone}</span>
       <span>F. {fax}</span>
     </div>
-    <a
-      className="simple-overlay__link"
-      href={link}
-      target="_blank"
-    >
+    <a className="simple-overlay__link" href={link} target="_blank">
       지도보러가기 <ArrowRightIcon />
     </a>
   </div>

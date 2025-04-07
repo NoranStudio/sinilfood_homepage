@@ -20,7 +20,7 @@ function OilTypes() {
       title: "카놀라유",
       subtitle: "CANOLA",
       description:
-        "유채씨는 북부유럽과 시베리아에서 많이 재배된다. 낮은 온도 에서 잘 응결되지 않고, 빛에 영향을 잘 받지 않는 성질이 있다. 튀김을 하면 오랫동안 바삭바삭 하고, 산화 안정성 및 가열 안정성이 매우 우수하다. 토코페롤 및 올레산 함량이높아 노화방지, 심장병, 암, 당뇨병, 고혈압에 걸릴 위험을 줄인다는 연구 결과가 보고되어 있다.",
+        "유채씨는 북부유럽과 시베리아에서 많이 재배된다. 낮은 온도 에서 잘 응결되지 않고, 빛에 영향을 잘 받지 않는 성질이 있다. 튀김을 하면 오랫동안 바삭바삭 하고, 산화 안정성 및 가열 안정성이 매우 우수하다. 토코페롤 및 올레산 함량이 높아 노화방지, 심장병, 암, 당뇨병, 고혈압에 걸릴 위험을 줄인다는 연구 결과가 보고되어 있다.",
       number: "02",
     },
     {
@@ -34,9 +34,9 @@ function OilTypes() {
     {
       image: type4,
       title: "해바라기유",
-      subtitle: "SOYBEAN OIL",
+      subtitle: "SUNFLOWER OIL",
       description:
-        "순한 맛과 높은 발연점을 가진 오일로 다양한 용도로 활용가능하다. 맛을 중립적으로 유지하면서도 고온에서 안정적인 성질을 가진 오일이다. 불포화 자방 및 비타민 E와 A가 풍부하다. 항산화 작용을 하여 세포를 보호하고 면역체계를 강화하며 피부와 눈 건간에도 도움을 준다.",
+        "순한 맛과 높은 발연점을 가진 오일로 다양한 용도로 활용가능하다. 맛을 중립적으로 유지하면서도 고온에서 안정적인 성질을 가진 오일이다. 불포화 지방 및 비타민 E와 A가 풍부하다. 항산화 작용을 하여 세포를 보호하고 면역체계를 강화하며 피부와 눈 건강에도 도움을 준다.",
       number: "04",
     },
   ];
@@ -44,15 +44,11 @@ function OilTypes() {
   return (
     <div className="oil-types-section">
       <div className="oil-types-title-wrapper">
-        <h2 className="oil-types-title">업소용 식용류</h2>
+        <h2 className="oil-types-title">업소용 식용유</h2>
         <div className="oil-type-boxes">
           {types.map((type, index) => (
             <div className="oil-type-box" key={index}>
-              <img
-                src={type.image}
-                alt={type.title}
-                className="oil-type-image"
-              />
+              <img src={type.image} alt={type.title} className="oil-type-image" />
               <div className="oil-type-content">
                 <div className="oil-type-header">
                   <div className="oil-type-title-wrapper">

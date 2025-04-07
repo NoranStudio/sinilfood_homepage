@@ -29,10 +29,7 @@ function CustomerSupportDesktop() {
 
   return (
     <div className="customer-wrapper">
-      <div
-        className="customer-banner"
-        style={{ backgroundImage: `url(${bannerImage})` }}
-      >
+      <div className="customer-banner" style={{ backgroundImage: `url(${bannerImage})` }}>
         <div className="customer-container">
           <div className="customer-content">
             <div className="banner-title">
@@ -45,10 +42,7 @@ function CustomerSupportDesktop() {
           </div>
         </div>
       </div>
-      <CustomerNavbarDesktop
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-      />
+      <CustomerNavbarDesktop activeTab={activeTab} setActiveTab={setActiveTab} />
       {renderContent()}
     </div>
   );
