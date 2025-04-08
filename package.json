@@ -18,7 +18,8 @@
   "homepage": ".",
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build"
+    "build": "react-app-rewired build",
+    "deploy": "aws s3 sync ./build s3://shinilfood.com --profile=shinilfood"
   },
   "eslintConfig": {
     "extends": [
