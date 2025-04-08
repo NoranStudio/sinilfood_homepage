@@ -1,73 +1,74 @@
 .oilproduct-nav {
-  position: relative;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 100px;
-  border-bottom: 1px solid #e0e0e0; /* 얇은 회색 실선 */
-  padding-top: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #e0e0e0; /* 얇은 회색 실선 */
+    padding-top: 5px;
 }
 
 .oilproduct-nav ul {
-  z-index: 2;
-  display: flex;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 1280px;
-  justify-content: start;
-  align-items: center;
+    z-index: 2;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: start;
+    align-items: center;
 }
 
 .oilproduct-nav li {
-  display: inline-block;
-  height: 100%;
+    display: inline-block;
+    height: 100%;
 }
 
 .oilproduct-nav .active {
-  font-weight: 500;
-  border-bottom: 3px solid #499953;
-  box-sizing: content-box;
+    font-weight: 500;
+    border-bottom: 3px solid #499953;
+    box-sizing: content-box;
 }
 
-.oilproduct-nav-item{
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-  padding: 0 20px;
-  height: 100%;
-  display: flex;
-  align-items: center;
+.oilproduct-nav-item {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .oilproduct-nav li.active .oilproduct-nav-item {
-  font-weight: 800; /* 원하는 굵기 */
+    font-weight: 800; /* 원하는 굵기 */
 }
 
 @media (max-width: 1279px) {
-  .oilproduct-nav {
-    width: 100%;
-    margin-bottom: 60px;
-    border-bottom: 1px solid #e0e0e0;
-    display: flex;
-    align-items: flex-end; /* 탭이 아래쪽에 붙도록 */
-    padding-left: 14px;
-    margin-top: -14px;
-  }
+    .oilproduct-nav {
+        width: 100%;
+        margin-bottom: 60px;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        align-items: flex-end; /* 탭이 아래쪽에 붙도록 */
+        padding-left: 14px;
+        margin-top: -14px;
+    }
 
-  .oilproduct-nav ul {
-    width: 100%;
-    height: 30px;
-  }
+    .oilproduct-nav ul {
+        width: 100%;
+        height: 30px;
+    }
 
-  .oilproduct-nav-item{
-    font-size: 10px;
-    padding: 0 6px;
-    display: flex;
-    align-items: center;
-  }
-} 
+    .oilproduct-nav-item {
+        font-size: 10px;
+        padding: 0 6px;
+        display: flex;
+        align-items: center;
+    }
+}

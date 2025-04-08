@@ -63,12 +63,17 @@ const Header = () => {
     return (
         <header className={isScrolled ? "scrolled" : ""}>
             <div className="header-contents">
-                <Link to="/">
+                <Link to="/" onClick={() => setIsOpenMenu(false)}>
                     <img className="header-logo" src={logo} alt="Sinilfood Logo" />
                 </Link>
                 <div className="nav-pc">
                     {menus.map((menu) => (
-                        <Link key={menu.id} to={menu.url} className={`${prefix === menu.url && "active"}`}>
+                        <Link
+                            key={menu.id}
+                            to={menu.url}
+                            className={`${prefix === menu.url && "active"}`}
+                            onClick={() => setIsOpenMenu(false)}
+                        >
                             {menu.name}
                         </Link>
                     ))}
@@ -78,7 +83,7 @@ const Header = () => {
                     <aside>
                         <div className="aside-header">
                             <div className="header-contents">
-                                <Link to="/">
+                                <Link to="/" onClick={() => setIsOpenMenu(false)}>
                                     <img className="header-logo" src={logo} alt="Sinilfood Logo" />
                                 </Link>
                                 <img src={navGray} alt="nav" className="nav-mo" onClick={handleClickToggleMenu} />

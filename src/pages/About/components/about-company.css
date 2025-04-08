@@ -1,222 +1,240 @@
 .about__company {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
 }
 
 .about__company__contents {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1280px;
-  gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    gap: 30px;
 }
 
 .about__company__contents img {
-  width: 100%;
+    width: 100%;
 }
 
 .about__company__detail {
-  display: flex;
-  grid-template-columns: 5fr 4fr;
-  grid-gap: 40px;
+    display: flex;
+    grid-template-columns: 5fr 4fr;
+    grid-gap: 0px;
 }
 
 .about__company__detail__text {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 20px;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
 }
 
 .about__company__detail__text span {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .about__company__sign {
-  flex: 1;
-  font-size: 20px;
-  position: relative;
-  display: flex;
-  margin-top: auto;
-  width: fit-content;
-  padding-right: 100px;
-  margin-right: 35px;
-  margin-bottom: 20px;
-  height: 50px;
-  justify-content: end;
+    flex: 2;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    margin-top: auto;
+    width: fit-content;
+    padding-right: 100px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    height: 50px;
+    justify-content: end;
 }
 .about__company__sign p:nth-child(1) {
-  padding-top: 25px;
+    padding-top: 25px;
 }
 .about__company__sign p:nth-child(2) {
-  margin-left: 20px;
-  font-weight: 700;
-  padding-top: 25px;
-  letter-spacing: 5px;
+    margin-left: 20px;
+    font-weight: 700;
+    padding-top: 25px;
+    letter-spacing: 5px;
 }
 
 .about__company__sign img {
-  position: absolute;
-  width: 45%;
-  right: 0;
-  top: -10px;
-  object-fit: contain;
-  margin-right: -33px;
-  float: "right";
+    position: absolute;
+    width: 45%;
+    right: 0;
+    top: -10px;
+    object-fit: contain;
+    margin-right: -33px;
+    float: "right";
 }
 
 .about__company__banner {
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .about__company__mission {
-  font-size: 40px;
-  width: 100%;
-  text-align: center;
-  font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
 }
 
 .about__company__mission p {
-  margin: 0;
+    margin: 0;
 }
 
 .about__company__mission p span {
-  color: #499953;
+    color: #499953;
 }
 
 .about__company__esg-title {
-  font-size: 40px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  line-height: 0.8;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 0.8;
+    margin-bottom: 40px;
 }
 
 .about__company__esg-title p:first-child {
-  padding-right: 20px;
-  border-right: 1px solid #000;
+    padding-right: 24px;
+    border-right: 1px solid #000;
 }
 
 .about__company__esg-title p:last-child {
-  padding-left: 20px;
-  color: #717071;
+    padding-left: 24px;
+    color: #717071;
 }
 
 .about__company__cards {
-  display: flex;
-  justify-content: center;
-  gap: 3%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
 }
 
 .about__company__card {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  aspect-ratio: 410/470;
-  border-radius: 5%;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 410/470;
+    border-radius: 5%;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 .about__company__card svg {
-  width: 30%;
-  height: 30%;
+    width: 30%;
+    height: 30%;
 }
 
 .about__company__card__title {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-top: 20px;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .about__company__card p {
-  font-size: 20px;
-  margin: 0;
-  margin-bottom: 10px;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 1279px) {
-  .about__company {
-    gap: 60px;
-  }
-  .about__company__contents {
-    width: 90%;
-    flex-direction: column;
-  }
+    .about__company {
+        gap: 60px;
+    }
+    .about__company__contents {
+        font-size: 38px;
+        width: 90%;
+        flex-direction: column;
+    }
 
-  .about__company__contents h1 {
-    text-align: center;
-  }
+    .about__company__contents h2 {
+        text-align: center;
+    }
 
-  .about__company__contents img {
-    border-radius: 20px;
-    width: 100%;
-    object-fit: cover;
-  }
+    .about__company__contents img {
+        border-radius: 20px;
+        width: 100%;
+        object-fit: cover;
+    }
 
-  .about__company__detail {
-    display: flex;
-    flex-direction: column;
-  }
+    .about__company__detail {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .about__company__detail__text {
-    font-size: 16px;
-  }
+    .about__company__detail__text {
+        font-size: 16px;
+    }
 
-  .about__company__sign {
-    flex-direction: column;
-    margin-left: auto;
-    align-content: start;
-  }
+    .about__company__sign {
+        width: 100%;
+        flex-direction: column;
+        margin-left: auto;
+        align-content: start;
+    }
 
-  .about__company__sign p {
-    padding: 5px 0 5px 0;
-    margin: 0;
-  }
+    .about__company__sign p {
+        padding: 5px 0 5px 0;
+        margin: 0;
+    }
 
-  .about__company__sign p:nth-child(2) {
-    margin-left: 0;
-    padding-bottom: 50px;
-  }
+    .about__company__sign p:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 0px;
+        text-align: right;
+    }
 
-  .about__company__sign img {
-    position: absolute;
-    width: 80%;
-    right: 0;
-    bottom: 0;
-    top: auto;
-    object-fit: contain;
-  }
+    .about__company__sign img {
+        position: absolute;
+        width: 50%;
+        right: 20px;
+        bottom: 0;
+        top: 50px;
+        object-fit: contain;
+    }
 
-  .about__company__banner {
-    width: 100%;
-    aspect-ratio: 3/1;
-    object-fit: cover;
-  }
+    .about__company__banner {
+        width: 100%;
+        aspect-ratio: 3/1;
+        object-fit: cover;
+    }
 
-  .about__company__mission {
-    font-size: 20px;
-  }
+    .about__company__mission {
+        font-size: 24px;
+    }
 
-  .about__company__esg-title {
-    font-size: 20px;
-  }
+    .about__company__esg-title {
+        font-size: 28px;
+    }
 
-  .about__company__cards {
-    flex-direction: column;
-    gap: 20px;
-  }
+    .about__company__card__title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 
-  .about__company__card {
-    aspect-ratio: 1/1;
-  }
+    .about__company__card p {
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .about__company__cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about__company__card {
+        aspect-ratio: 1/1;
+    }
 }

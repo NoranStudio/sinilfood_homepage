@@ -5,7 +5,7 @@ import "./about-history-mobile.css";
 const HistoryMobile = ({ historyItems }) => {
     return (
         <div className="about__history">
-            <h1>(주)신일푸드가 걸어온 길</h1>
+            <h2>(주)신일푸드가 걸어온 길</h2>
             <div className="about__history__graph-mobile">
                 {historyItems.map((item) => (
                     <div className="about__history__graph-mobile__item">
