@@ -64,30 +64,6 @@
 
 @media (max-width: 1279px) {
     .oil-container {
-        padding: 0 15px;
-    }
-
-    .section-title {
-        font-size: 24px;
-        padding-bottom: 15px;
-    }
-
-    .oil-list {
-        gap: 30px 20px;
-    }
-
-    .oil-item {
-        width: 160px;
-        gap: 10px;
-    }
-
-    .oil-item p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 767px) {
-    .oil-container {
         padding: 0 10px;
         gap: 30px;
     }
@@ -99,14 +75,23 @@
 
     .oil-list {
         gap: 25px 15px;
+        margin-bottom: 20px;
     }
 
     .oil-item {
         width: 100px;
+        height: 210px;
         gap: 8px;
     }
 
     .oil-item p {
         font-size: 12px;
+    }
+
+    .section-divider {
+        border: none;
+        height: 1px;
+        background-color: #e5e5e5;
+        margin: 0px;
     }
 }

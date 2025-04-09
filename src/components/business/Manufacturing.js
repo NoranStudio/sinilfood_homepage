@@ -1,8 +1,8 @@
-import React from 'react';
-import './Business.css';
-import oilFeature from '@assets/img/business/oil_feature.png';
-import roleGraph from '@assets/img/business/role_graph.png';
-import limitImg from '@assets/img/business/limit.png';
+import React from "react";
+import "./Business.css";
+import oilFeature from "@assets/img/business/oil_feature.png";
+import roleGraph from "@assets/img/business/role_graph.png";
+import limitImg from "@assets/img/business/limit.png";
 
 function Manufacturing() {
     return (
@@ -11,10 +11,10 @@ function Manufacturing() {
                 <h3 className="manufacturing-title">전용유란?</h3>
                 <p className="manufacturing-description">
                     <span className="description-light">
-                        여러유종별로 특성과 식품 첨가물 추가를 통해 단점 개선과 기능성을 높인
+                        여러 유종 별로 특성과 식품 첨가물 추가를 통해 단점 개선과 기능성을 높인
                     </span>
                     <br />
-                    <span className="description-bold">고객의 필요에 맞게 커스터마이징된 식용유</span>
+                    <span className="description-bold"> 고객의 필요에 맞게 커스터마이징된 식용유</span>
                     <span className="description-light">입니다</span>
                 </p>
                 <div className="feature-section">
@@ -46,16 +46,13 @@ function Manufacturing() {
                     <div className="advantages-boxes">
                         <div className="advantage-box">
                             <h4 className="advantage-box-title">지속적 관리 & 수익 안정화</h4>
-                            <p className="advantage-box-description">
-                                가맹점에 대한 지속적인 관리와 안정적인 수익구조 구축
-                            </p>
+                            <p className="advantage-box-description">가맹점에 대한 지속적인 관리와 안정적인 수익구조 구축</p>
                         </div>
                         <div className="advantage-box">
                             <h4 className="advantage-box-title">차별성</h4>
                             <p className="advantage-box-description">
-                                프랜차이즈 가맹점의 차별화된 재고관리와 소비자에게 신뢰를 줄수있는 대기업 제조사와의
-                                전용유 제작으로 인해 안정적인 생산과 공급망 구축과 경쟁력 있는 가격 으로 인한 지속가능한
-                                수익구조 완성
+                                프랜차이즈 가맹점의 차별화된 재고관리와 소비자에게 신뢰를 줄수있는 대기업 제조사와의 전용유
+                                제작으로 인해 안정적인 생산과 공급망 구축과 경쟁력 있는 가격 으로 인한 지속가능한 수익구조 완성
                             </p>
                         </div>
                     </div>
@@ -88,8 +85,8 @@ function Manufacturing() {
                         <div className="advantage-box">
                             <h4 className="advantage-box-title">고객사 자금운용</h4>
                             <p className="advantage-box-description">
-                                기존 전용유 매입에 대한 자금을 신일푸드에서 대신 매입함으로써 고객사 자금 운영의 여유가
-                                생겨 향후 고객사의 다른 투자 및 자금 운용에 이점이 발생함
+                                기존 전용유 매입에 대한 자금을 신일푸드에서 대신 매입함으로써 고객사 자금 운영의 여유가 생겨 향후
+                                고객사의 다른 투자 및 자금 운용에 이점이 발생함
                             </p>
                         </div>
                     </div>
@@ -105,7 +102,7 @@ function Manufacturing() {
                     </div>
                 </div>
                 <div className="advantages-section">
-                    <h3 className="advantages-title" style={{ whiteSpace: 'nowrap' }}>
+                    <h3 className="advantages-title" style={{ whiteSpace: "nowrap" }}>
                         본사물류의 한계
                     </h3>
                     <div className="limit-content">

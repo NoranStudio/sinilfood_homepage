@@ -26,9 +26,7 @@ function RenewableEnergyMobile() {
         <div className="business-content-section-mobile">
             <div className="renewable-content-mobile">
                 <h3 className="renewable-title-mobile">
-                    (주)신일푸드는 탄소중립 사업을 통한
-                    <br />
-                    <span className="highlight-text">ESG 지속 경영</span>을 실현하고 있습니다.
+                    (주)신일푸드는 탄소중립 사업을 통한 <span className="highlight-text">ESG 지속 경영</span>을 실현하고 있습니다.
                 </h3>
             </div>
             <div className="biodiesel-section-mobile">

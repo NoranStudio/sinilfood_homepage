@@ -100,12 +100,12 @@
 }
 
 .about__company__esg-title p:first-child {
-    padding-right: 24px;
+    padding-right: 15px;
     border-right: 1px solid #000;
 }
 
 .about__company__esg-title p:last-child {
-    padding-left: 24px;
+    padding-left: 15px;
     color: #717071;
 }
 
@@ -213,7 +213,7 @@
     }
 
     .about__company__esg-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .about__company__card__title {
