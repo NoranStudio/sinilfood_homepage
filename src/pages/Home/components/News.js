@@ -30,7 +30,6 @@ const News = () => {
             description: "(주)신일푸드가 (주)신세계 이마트 업무협약을 체결했습니다.",
             date: "2024. 07. 01",
         },
-        // ... 추가 뉴스 데이터
     ];
 
     const swiperConfig = isMobile
@@ -39,6 +38,13 @@ const News = () => {
               spaceBetween: 20,
               slidesPerView: 3,
               className: "news-slider-mo",
+              allowTouchMove: false,
+              noSwiping: true,
+              simulateTouch: false,
+              touchReleaseOnEdges: true,
+              nested: false,
+              watchOverflow: true,
+              preventInteractionOnTransition: true,
           }
         : {
               direction: "horizontal",
